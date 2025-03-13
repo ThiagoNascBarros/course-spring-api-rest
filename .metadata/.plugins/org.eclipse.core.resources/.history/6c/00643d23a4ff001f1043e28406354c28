@@ -1,0 +1,28 @@
+package br.edu.senaisp.Escola.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/aluno")
+public class AlunoController {
+	
+	@GetMapping
+	public String nameAluno() {
+		return "Olá";
+	}
+	
+	@GetMapping("/{id}")
+	public String buscarId(@PathVariable int id) {
+		return "3";
+	}
+	
+	@PostMapping
+	public void insertAluno() {
+		
+	}
+
+}
