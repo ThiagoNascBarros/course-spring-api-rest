@@ -12,7 +12,7 @@ public class AlunoController {
 	
 	@GetMapping
 	public String nameAluno() {
-		return "Olá";
+		return "Olá aluno";
 	}
 	
 	@GetMapping("/{id}")
