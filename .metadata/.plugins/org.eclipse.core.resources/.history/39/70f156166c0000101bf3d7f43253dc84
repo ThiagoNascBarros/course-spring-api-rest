@@ -1,0 +1,51 @@
+package br.edu.senaisp.Escola.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.edu.senaisp.Escola.model.Aluno;
+
+@RestController
+@RequestMapping("/api/aluno")
+public class AlunoController {
+	
+	@GetMapping
+	public String nameAluno() {
+		return "Olá aluno";
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<Aluno> buscarId(@PathVariable Long id) {
+		Aluno a = new Aluno();
+		a.setId(id);
+		a.setCpf("342.234.914-91");
+		a.setNome("Pedro alves");
+//		Devolvendo em JSON o Aluno
+//		return new ResponseEntity<Aluno>(a, HttpStatus.OK);
+		return ResponseEntity.status(200).body(a); 
+	}
+	
+	@PostMapping
+	public void insertAluno(String nome) {
+		System.out.println(nome);
+	}
+	
+	@PutMapping
+	public void alteraAluno(String nome) {
+		System.out.println("Altera nome " + nome);
+	}
+	
+	@DeleteMapping
+	public void deletarAluno(String nome) {
+		System.out.println("Aluno " + nome + " deletado...");
+	}
+	
+
+}

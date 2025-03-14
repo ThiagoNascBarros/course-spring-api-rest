@@ -1,0 +1,11 @@
+package br.edu.senaisp.Escola.model;
+
+public class Aluno {
+	
+	private Long id;
+	private String nome;
+	private String cpf;
+	
+	
+
+}

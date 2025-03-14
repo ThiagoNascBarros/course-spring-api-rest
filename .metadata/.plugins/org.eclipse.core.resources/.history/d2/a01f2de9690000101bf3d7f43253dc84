@@ -1,0 +1,5 @@
+package br.edu.senaisp.Escola.model;
+
+public class Aluno {
+
+}
