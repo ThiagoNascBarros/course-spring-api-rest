@@ -1,0 +1,20 @@
+package br.com.senaisp.Produto.service;
+
+import org.springframework.stereotype.Service;
+
+import br.com.senaisp.Produto.model.Produto;
+
+@Service
+public class ProdutoService {
+
+	public void addProdutoText(Produto produto) {
+		
+		String nomeArg = "produto" + produto.getId() + ".txt";
+		
+		
+		
+	}
+	
+	
+
+}

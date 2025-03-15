@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;a&apos; in &apos;br.edu.senaisp.Escola.controller.AlunoController.insertAluno(...)&apos; to &apos;aluno&apos;&#x0D;&#x0A;- Original project: &apos;Escola&apos;&#x0D;&#x0A;- Original element: &apos;br.edu.senaisp.Escola.controller.AlunoController.insertAluno(Aluno).a&apos;&#x0D;&#x0A;- Renamed element: &apos;a&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;a&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;br.edu.senaisp.Escola.controller{AlunoController.java[AlunoController~insertAluno~QAluno;@a!1484!1503!1503!1503!QAluno;!0!true" name="aluno" references="true" stamp="1741991376147" version="1.0"/>
+</session>

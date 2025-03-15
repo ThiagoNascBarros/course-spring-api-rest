@@ -36,8 +36,8 @@ public class AlunoController {
 	}
 	
 	@PostMapping
-	public Aluno insertAluno(@RequestBody Aluno a) {
-		return a;
+	public Aluno insertAluno(@RequestBody Aluno aluno) {
+		return aluno;
 	}
 	
 	@PutMapping

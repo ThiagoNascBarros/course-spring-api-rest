@@ -1,0 +1,9 @@
+package br.com.senaisp.Produto.model;
+
+public class Produto {
+	
+	private String nome;
+	private int qntd;
+	private double preco;
+
+}

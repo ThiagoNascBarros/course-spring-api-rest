@@ -1,0 +1,2 @@
+spring.application.name=Escola
+server.port=8094
