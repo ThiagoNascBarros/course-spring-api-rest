@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\FIC\Downloads\Produto"/>
 			<item value="C:\Users\FIC\ws_thiago_spring\Escola"/>
 		</list>
 		<list key="projectNameTemplate">
