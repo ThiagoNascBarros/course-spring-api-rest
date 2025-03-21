@@ -1,9 +1,9 @@
 package br.edu.senaisp.colegio.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
-
-import javax.management.RuntimeErrorException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,5 +43,18 @@ public class TurmaService {
 		}
 		return null;
 	}
+
+	public Turma alterarPorId(Long id, Turma turma) {
+		Optional<Turma> op = repo.findById(id);
+		if(op.isPresent()) {
+			turma.setId(id);
+			return repo.save(turma);			
+		} else
+			return null;
+	}
+
+//	Map<String, String> message = new HashMap<>();
+//	message.put("message", "Não existe o id");
+	
 
 }
