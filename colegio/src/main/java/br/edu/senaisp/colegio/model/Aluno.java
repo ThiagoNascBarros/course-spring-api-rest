@@ -8,6 +8,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -17,12 +18,13 @@ public class Aluno {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@NotBlank
+	@NotNull
 	@Size(min = 2, max = 120)
 	private String nome;
 	@Email
 	private String email;
 	@ManyToOne
-	@JoinColumn(name = "")
+	@JoinColumn(name = "turma_id", referencedColumnName = "id")
 	private Turma turma;
 	
 	public Long getId() {
@@ -48,5 +50,15 @@ public class Aluno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public Turma getTurma() {
+		return turma;
+	}
+
+	public void setTurma(Turma turma) {
+		this.turma = turma;
+	}
+	
+	
 	
 }

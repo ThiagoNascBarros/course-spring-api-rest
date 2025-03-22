@@ -3,6 +3,7 @@ package br.edu.senaisp.colegio.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,10 +24,10 @@ public class Turma {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@NotNull
+	@NotNull(message = "O nome não pode ser nulo")
 	@Size(min = 2, max = 100)
 	private String nome;
-	@OneToMany(mappedBy = "turma")
+	@OneToMany(mappedBy = "turma", cascade = CascadeType.ALL)
 	private List<Aluno> alunos = new ArrayList<>();
 	
 	public Long getId() {
@@ -41,5 +42,11 @@ public class Turma {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	public List<Aluno> getAlunos() {
+		return alunos;
+	}
+	public void setAlunos(List<Aluno> alunos) {
+		this.alunos = alunos;
+	}
+	
 }
