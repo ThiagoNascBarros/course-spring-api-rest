@@ -1,5 +1,7 @@
 package br.edu.senaisp.colegio.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,6 +27,7 @@ public class Aluno {
 	private String email;
 	@ManyToOne
 	@JoinColumn(name = "turma_id", referencedColumnName = "id")
+	@JsonBackReference
 	private Turma turma;
 	
 	public Long getId() {
@@ -58,7 +61,5 @@ public class Aluno {
 	public void setTurma(Turma turma) {
 		this.turma = turma;
 	}
-	
-	
 	
 }

@@ -1,32 +1,48 @@
 package br.edu.senaisp.colegio.service;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.edu.senaisp.colegio.model.Aluno;
 import br.edu.senaisp.colegio.model.Turma;
+import br.edu.senaisp.colegio.repository.AlunoRepository;
 import br.edu.senaisp.colegio.repository.TurmaRepository;
 
 @Service
 public class TurmaService {
 	
 	@Autowired
-	private TurmaRepository repo;
+	private TurmaRepository repoTurma;
+	
+	@Autowired
+	private AlunoRepository repoAluno;
 	
 	public Turma gravarTurma(Turma t) {
-		return repo.save(t);
+		Turma tmp = repoTurma.save(t);
+		
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		
+		for(Aluno a : t.getAlunos()) {
+			a.setTurma(tmp);
+			alunos.add(a);
+		}
+		
+		alunos  = repoAluno.saveAll(alunos);
+		tmp.setAlunos(alunos);
+		
+		return tmp;
 	}
 	
 	public List<Turma> exibirTurmas(){
-		return repo.findAll();
+		return repoTurma.findAll();
 	}
 	
 	public Turma exibirUmaTurma(Long id) {
-		Optional<Turma> turma = repo.findById(id);
+		Optional<Turma> turma = repoTurma.findById(id);
 //					 Se der errado retornar os erros
 		return turma.orElse(null);
 	}
@@ -35,7 +51,7 @@ public class TurmaService {
 		try {
 			Turma turma = exibirUmaTurma(id);
 			if(turma != null) {
-				repo.deleteById(id);
+				repoTurma.deleteById(id);
 				return turma;
 			}
 		} catch (Exception e) {
@@ -45,10 +61,10 @@ public class TurmaService {
 	}
 
 	public Turma alterarPorId(Long id, Turma turma) {
-		Optional<Turma> op = repo.findById(id);
+		Optional<Turma> op = repoTurma.findById(id);
 		if(op.isPresent()) {
 			turma.setId(id);
-			return repo.save(turma);			
+			return repoTurma.save(turma);			
 		} else
 			return null;
 	}
