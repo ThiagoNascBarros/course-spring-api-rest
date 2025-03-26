@@ -3,6 +3,7 @@ package br.edu.senaisp.colegio.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -25,7 +26,7 @@ public class Aluno {
 	private String nome;
 	@Email
 	private String email;
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "turma_id", referencedColumnName = "id")
 	@JsonBackReference
 	private Turma turma;

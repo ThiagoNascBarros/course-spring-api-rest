@@ -8,15 +8,23 @@ import org.springframework.stereotype.Service;
 
 import br.edu.senaisp.colegio.model.Aluno;
 import br.edu.senaisp.colegio.repository.AlunoRepository;
+import br.edu.senaisp.colegio.repository.TurmaRepository;
 
 @Service
 public class AlunoService {
 
 	@Autowired
 	private AlunoRepository repoAluno;
+	
+	@Autowired
+	private TurmaRepository repoTurma;
 
 	public Aluno gravarAluno(Aluno aluno) {
-		return repoAluno.save(aluno);	
+		try {
+			return repoAluno.save(aluno);				
+		} catch (Exception e) {
+			throw new RuntimeException("Não foi possível adicionar o aluno");
+		}
 	}
 
 	public List<Aluno> buscarTodos() {
