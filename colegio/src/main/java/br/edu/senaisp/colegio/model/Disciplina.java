@@ -11,50 +11,50 @@ import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Disciplina {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	@NotBlank
-	private String titulo;
-	@Min(1)
-	private int duracaoH;
-	
-	@OneToOne(mappedBy = "disciplina", cascade = CascadeType.ALL)
-	private Turma turma;
 
-	public Long getId() {
-		return id;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    @NotBlank
+    private String titulo;
 
-	public String getTitulo() {
-		return titulo;
-	}
+    @Min(1)
+    private int duracaoH;
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
+    @OneToOne(mappedBy = "disciplina", cascade = CascadeType.ALL)
+    private Turma turma;
 
-	public int getDuracaoH() {
-		return duracaoH;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setDuracaoH(int duracaoH) {
-		this.duracaoH = duracaoH;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public Turma getTurma() {
-		return turma;
-	}
+    public String getTitulo() {
+        return titulo;
+    }
 
-	public void setTurma(Turma turma) {
-		this.turma = turma;
-	}
-	
-	
-	
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getDuracaoH() {
+        return duracaoH;
+    }
+
+    public void setDuracaoH(int duracaoH) {
+        this.duracaoH = duracaoH;
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
+    }
+
 }

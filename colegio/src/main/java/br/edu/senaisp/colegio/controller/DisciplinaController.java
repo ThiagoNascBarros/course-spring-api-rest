@@ -14,7 +14,7 @@ public class DisciplinaController {
     private DisciplinaService disciplinaService;
 
     @GetMapping
-    public ResponseEntity exibirDisciplinas(){
+    public ResponseEntity<?> exibirDisciplinas() {
         try {
             return ResponseEntity.status(200).body(disciplinaService.exibirDisciplinas());
         } catch (Exception e) {
@@ -22,8 +22,17 @@ public class DisciplinaController {
         }
     }
 
+    @GetMapping("{id}")
+    public ResponseEntity<?> exibirUmaDisciplina(@PathVariable Long id) {
+        try {
+            return ResponseEntity.status(200).body(disciplinaService.exibirUmaDisciplina(id));
+        } catch (Exception e) {
+            return ResponseEntity.status(404).body(e.getMessage());
+        }
+    }
+
     @PostMapping
-    public ResponseEntity gravarDisciplina(@RequestBody Disciplina disciplina){
+    public ResponseEntity<?> gravarDisciplina(@RequestBody Disciplina disciplina) {
         try {
             Disciplina d = disciplinaService.gravarDisciplina(disciplina);
             return ResponseEntity.status(201).body(d);
@@ -33,10 +42,23 @@ public class DisciplinaController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity alterarDisciplina(@PathVariable Long id, @RequestBody Disciplina disciplina){
+    public ResponseEntity<?> alterarDisciplina(@PathVariable Long id, @RequestBody Disciplina disciplina) {
         try {
             Disciplina d = disciplinaService.alterarDisciplina(id, disciplina);
             return ResponseEntity.status(200).body(d);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(e.getMessage());
+        }
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<?> deletarDisciplina(@PathVariable Long id) {
+        try {
+            Disciplina disciplina = disciplinaService.deletarDisciplina(id);
+            if (disciplina != null)
+                return ResponseEntity.status(200).body(disciplina);
+            else
+                return ResponseEntity.status(400).build();
         } catch (Exception e) {
             return ResponseEntity.status(500).body(e.getMessage());
         }
