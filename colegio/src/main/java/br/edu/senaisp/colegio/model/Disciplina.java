@@ -1,5 +1,6 @@
 package br.edu.senaisp.colegio.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,6 +10,8 @@ import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
+
+// @JsonIgnore -> Para ignorar o atributo no JSON
 @Entity
 public class Disciplina {
 
@@ -23,6 +26,7 @@ public class Disciplina {
     private int duracaoH;
 
     @OneToOne(mappedBy = "disciplina", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Turma turma;
 
     public Long getId() {

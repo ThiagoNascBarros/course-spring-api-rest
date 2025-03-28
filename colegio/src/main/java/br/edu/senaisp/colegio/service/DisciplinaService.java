@@ -19,8 +19,10 @@ public class DisciplinaService {
     }
 
     public Disciplina exibirUmaDisciplina(Long id) {
-        Optional<Disciplina> disciplina = repoDisciplina.findById(id);
-        return disciplina.orElse(null);
+        return (repoDisciplina.findById(id)).orElse(null);
+//        Ou desde jeito
+//        Optional<Disciplina> disciplina = repoDisciplina.findById(id);
+//        return disciplina.orElse(null);
     }
 
     public Disciplina gravarDisciplina(Disciplina disciplina) {
