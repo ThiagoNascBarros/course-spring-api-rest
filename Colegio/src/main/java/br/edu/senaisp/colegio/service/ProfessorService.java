@@ -23,7 +23,7 @@ public class ProfessorService {
     }
 
     public Professor buscarPorId(Long id) {
-        return repoProfessor.findById(id).orElse(null);
+        return repoProfessor.findById(id).orElseThrow(() -> new RuntimeException());
     }
 
     public Professor gravar(Professor professor) {
@@ -42,6 +42,19 @@ public class ProfessorService {
         }
     }
 
+	public Professor excluir(Long id) {
+		try {
+			Professor professor = buscarPorId(id);
+			if(professor != null) {
+				repoProfessor.deleteById(id);
+				return professor;
+			}
+		} catch (Exception e) {
+			throw new RuntimeException("Error: " + e.getMessage());
+		}
+		return null;
+	}
+    
 
 
 

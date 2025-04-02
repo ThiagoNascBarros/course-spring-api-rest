@@ -2,6 +2,8 @@ package br.edu.senaisp.colegio.controller;
 
 import br.edu.senaisp.colegio.model.Professor;
 import br.edu.senaisp.colegio.service.ProfessorService;
+
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,15 @@ public class ProfessorController {
             return ResponseEntity.status(500).body(e.getMessage());
         }
     }
+    
+    @GetMapping("{id}")
+    public ResponseEntity<?> buscarPorId(@PathVariable Long id) {
+    	try {
+    		return ResponseEntity.status(200).body(professorService.buscarPorId(id));
+    	} catch (Exception e) {
+    		return ResponseEntity.status(400).body(e.getMessage());
+    	}
+    }
 
     @PostMapping
     public ResponseEntity<?> gravar(@RequestBody Professor professor) {
@@ -32,5 +43,15 @@ public class ProfessorController {
             return ResponseEntity.status(400).body(e.getMessage());
         }
     }
+    
+    @DeleteMapping("{id}")
+    public ResponseEntity<?> excluir(@PathVariable Long id) {
+    	try {
+    		return ResponseEntity.status(200).body(professorService.excluir(id));
+    	} catch (Exception e) {
+    		return ResponseEntity.status(400).body(e.getMessage());
+    	}
+    }
+
 
 }

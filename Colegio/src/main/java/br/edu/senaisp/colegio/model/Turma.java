@@ -5,10 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -85,6 +82,16 @@ public class Turma {
     public void setDisciplina(Disciplina disciplina) {
         this.disciplina = disciplina;
     }
+
+	public Set<Professor> getProfessores() {
+		return professores;
+	}
+
+	public void setProfessores(Set<Professor> professores) {
+		this.professores = professores;
+	}
+    
+    
 
 
 }
