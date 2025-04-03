@@ -54,8 +54,22 @@ public class ProfessorService {
 		}
 		return null;
 	}
-    
 
 
+    public Object alterar(Long id, Professor professor) {
+        try {
+            Set<Turma> turmas = new HashSet<>();
 
+            for (Turma turma : professor.getTurmas()) {
+                turma = repoTurma.findById(turma.getId()).orElse(null);
+                if (turma != null)
+                    turmas.add(turma);
+            }
+            professor.setId(id);
+            professor.setTurmas(turmas);
+            return repoProfessor.save(professor);
+        } catch (RuntimeException e) {
+            throw new RuntimeException("Não foi possível incluir o professor!" + e.getMessage());
+        }
+    }
 }

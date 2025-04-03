@@ -1,5 +1,6 @@
 package br.edu.senaisp.colegio.controller;
 
+import br.edu.senaisp.colegio.exceptions.RecursoNotFound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -38,12 +39,7 @@ public class AlunoController {
 	
 	@PostMapping
 	public ResponseEntity inserir(@RequestBody Aluno aluno) {
-		try {
-			Aluno alunoSalvo = alunoService.gravarAluno(aluno);
-			return ResponseEntity.status(201).body(alunoSalvo);
-		} catch(Exception e) {
-			return ResponseEntity.status(400).body(e.getMessage());
-		}
+			return ResponseEntity.status(201).body(alunoService.gravarAluno(aluno));
 	}
 	
 	@PutMapping("{id}")

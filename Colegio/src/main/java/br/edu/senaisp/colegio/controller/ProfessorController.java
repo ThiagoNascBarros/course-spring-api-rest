@@ -21,18 +21,18 @@ public class ProfessorController {
     public ResponseEntity<?> buscarTodos() {
         try {
             return ResponseEntity.status(200).body(professorService.buscarTodos());
-        }  catch (Exception e) {
+        } catch (Exception e) {
             return ResponseEntity.status(500).body(e.getMessage());
         }
     }
-    
+
     @GetMapping("{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Long id) {
-    	try {
-    		return ResponseEntity.status(200).body(professorService.buscarPorId(id));
-    	} catch (Exception e) {
-    		return ResponseEntity.status(400).body(e.getMessage());
-    	}
+        try {
+            return ResponseEntity.status(200).body(professorService.buscarPorId(id));
+        } catch (Exception e) {
+            return ResponseEntity.status(400).body(e.getMessage());
+        }
     }
 
     @PostMapping
@@ -43,14 +43,23 @@ public class ProfessorController {
             return ResponseEntity.status(400).body(e.getMessage());
         }
     }
-    
+
+    @PutMapping("{id}")
+    public ResponseEntity<?> alterar(@PathVariable Long id, @RequestBody Professor professor) {
+        try {
+            return ResponseEntity.status(200).body(professorService.alterar(id, professor));
+        } catch (Exception e) {
+            return ResponseEntity.status(400).body(e.getMessage());
+        }
+    }
+
     @DeleteMapping("{id}")
     public ResponseEntity<?> excluir(@PathVariable Long id) {
-    	try {
-    		return ResponseEntity.status(200).body(professorService.excluir(id));
-    	} catch (Exception e) {
-    		return ResponseEntity.status(400).body(e.getMessage());
-    	}
+        try {
+            return ResponseEntity.status(200).body(professorService.excluir(id));
+        } catch (Exception e) {
+            return ResponseEntity.status(400).body(e.getMessage());
+        }
     }
 
 
