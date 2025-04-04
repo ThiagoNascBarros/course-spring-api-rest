@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import br.edu.senaisp.colegio.exceptions.RecursoNotFound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -63,7 +64,7 @@ public class TurmaService {
 	public Turma exibirUmaTurma(Long id) {
 		Optional<Turma> turma = repoTurma.findById(id);
 //					 Se der errado retornar os erros
-		return turma.orElse(null);
+		return turma.orElseThrow(() -> new RecursoNotFound("Turma não existe"));
 	}
 	
 	public Turma excluirPorId(Long id) {

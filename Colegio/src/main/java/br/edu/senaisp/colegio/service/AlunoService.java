@@ -3,6 +3,7 @@ package br.edu.senaisp.colegio.service;
 import java.util.List;
 import java.util.Optional;
 
+import br.edu.senaisp.colegio.exceptions.RecursoNotFound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +34,7 @@ public class AlunoService {
 
 	public Aluno buscarPorId(Long id) {
 		Optional<Aluno> a = repoAluno.findById(id);
-		return a.orElse(null);
+		return a.orElseThrow(() -> new RecursoNotFound("Aluno não encontrado"));
 	}
 	
 	public Aluno alterarAluno(Long id, Aluno a) {
