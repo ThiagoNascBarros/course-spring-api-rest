@@ -44,7 +44,7 @@ public class AlunoService {
 			a.setId(id);
 			return repoAluno.save(a);			
 		} else
-			return null;
+			throw new RecursoNotFound("Aluno não existe");
 	}
 
 	public Aluno excluirPorId(Long id) {
@@ -52,7 +52,11 @@ public class AlunoService {
 			Aluno aluno = buscarPorId(id);
 			if(aluno != null) {
 				repoAluno.deleteById(id);
-				return aluno;
+
+				if (aluno == null)
+					return aluno;
+
+				throw new RuntimeException("Não foi possível excluir");
 			}
 		} catch(Exception e) {
 			throw new RuntimeException("Error: " + e.getMessage());

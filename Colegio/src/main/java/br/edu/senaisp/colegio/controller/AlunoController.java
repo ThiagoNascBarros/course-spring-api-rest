@@ -16,54 +16,42 @@ import br.edu.senaisp.colegio.model.Aluno;
 import br.edu.senaisp.colegio.model.Turma;
 import br.edu.senaisp.colegio.service.AlunoService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/aluno")
 public class AlunoController {
-	
-	@Autowired
-	private AlunoService alunoService;
 
-	@GetMapping
-	public ResponseEntity buscarTodos() {
-		return ResponseEntity.status(200).body(alunoService.buscarTodos());
-	}
-	
-	@GetMapping("{id}")
-	public ResponseEntity buscarPorId(@PathVariable Long id) {
-		Aluno aluno = alunoService.buscarPorId(id);
-		if (aluno == null)
-			return ResponseEntity.status(404).build();
-		else
-			return ResponseEntity.status(200).body(aluno);
-	}
-	
-	@PostMapping
-	public ResponseEntity inserir(@RequestBody Aluno aluno) {
-			return ResponseEntity.status(201).body(alunoService.gravarAluno(aluno));
-	}
-	
-	@PutMapping("{id}")
-	public ResponseEntity alterar(@PathVariable Long id, @RequestBody Aluno aluno) {
-		try {
-			return ResponseEntity.status(200).body(alunoService.alterarAluno(id, aluno));
-		} catch (Exception e) {
-			return ResponseEntity.status(500).body(e.getMessage());
-		}
-	}
-	
-	
-	@DeleteMapping("{id}")
-	public ResponseEntity excluir(@PathVariable Long id) {
-		try {
-			Aluno aluno = alunoService.excluirPorId(id);
-			if (aluno == null)
-				return ResponseEntity.status(404).build();
-			else
-				return ResponseEntity.status(200).body(aluno);
-		} catch (Exception e) {
-			return ResponseEntity.status(400).body(e.getMessage());
-		}
-	}
-	
-	
+    @Autowired
+    private AlunoService alunoService;
+
+    @GetMapping
+    public ResponseEntity<List<Aluno>> buscarTodos() {
+        return ResponseEntity.status(200).body(alunoService.buscarTodos());
+    }
+
+    @GetMapping("{id}")
+    public ResponseEntity<Aluno> buscarPorId(@PathVariable Long id) {
+        Aluno aluno = alunoService.buscarPorId(id);
+        return ResponseEntity.status(200).body(aluno);
+    }
+
+    @PostMapping
+    public ResponseEntity<Aluno> inserir(@RequestBody Aluno aluno) {
+        return ResponseEntity.status(201).body(alunoService.gravarAluno(aluno));
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<Aluno> alterar(@PathVariable Long id, @RequestBody Aluno aluno) {
+        return ResponseEntity.status(200).body(alunoService.alterarAluno(id, aluno));
+    }
+
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<Aluno> excluir(@PathVariable Long id) {
+        Aluno aluno = alunoService.excluirPorId(id);
+        return ResponseEntity.status(200).body(aluno);
+    }
+
+
 }
