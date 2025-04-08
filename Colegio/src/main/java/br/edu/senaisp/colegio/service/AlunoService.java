@@ -50,14 +50,14 @@ public class AlunoService {
 	public Aluno excluirPorId(Long id) {
 		try {
 			Aluno aluno = buscarPorId(id);
-			if(aluno != null) {
-				repoAluno.deleteById(id);
-
-				if (aluno == null)
-					return aluno;
-
+			if (aluno == null)
 				throw new RuntimeException("Não foi possível excluir");
+
+			if (aluno != null) {
+				repoAluno.deleteById(id);
+				return aluno;
 			}
+
 		} catch(Exception e) {
 			throw new RuntimeException("Error: " + e.getMessage());
 		}
