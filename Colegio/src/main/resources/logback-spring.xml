@@ -1,3 +1,43 @@
 <configuration>
 
+	<property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %msg%n" />
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+	
+		<encoder>
+		
+			<pattern>${LOG_PATTERN}</pattern>
+		
+		</encoder>
+	
+	</appender>
+	
+	<appender name="file" class="ch.qos.logback.core.FileAppender">
+		<file>logs/erro.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>${LOG_PATTERN}</pattern>
+		</encoder>
+	
+	</appender>
+	
+	<logger name="org.springframework" level="INFO" additivity="false">
+		<appender-ref ref="console"/>
+	</logger>
+	
+	<logger name="org.springframework" level="ERROR" additivity="false">
+		<appender-ref ref="file"/>
+	</logger>
+	
+	<logger name="br.edu.senaisp.colegio.exception" level="ERROR" additivity="false">
+		<appender-ref ref="file"/>
+	</logger>
+
+	<root>
+	
+		<appender-ref level="ERROR" ref="file"/>
+		<appender-ref level="INFO" ref="console" />
+	
+	</root>
+
 </configuration>

@@ -1,6 +1,10 @@
 package br.edu.senaisp.colegio.exceptions;
 
-import jakarta.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
+import java.util.Locale;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.http.HttpStatus;
@@ -12,12 +16,13 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
-import java.time.LocalDateTime;
-import java.util.Locale;
+import jakarta.servlet.http.HttpServletRequest;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+	Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+	
     @Autowired
     private MessageSource messageSource;
     @Autowired
@@ -25,6 +30,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(RecursoNotFound.class)
     public ResponseEntity<?> recursoNotFound(RecursoNotFound e, HttpServletRequest request) {
+    	log.error(e.getMessage());
         Locale local = localeResolver.resolveLocale(request);
         System.err.println(local.getLanguage());
         String msgLang = messageSource.getMessage("recursoNotFound", null, local);

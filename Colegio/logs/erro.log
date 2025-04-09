@@ -1,0 +1,1218 @@
+2025-04-08 21:32:45 - Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:32:45 - Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:32:45 - HikariPool-3 - Shutdown initiated...
+2025-04-08 21:32:45 - HikariPool-3 - Shutdown completed.
+2025-04-08 21:32:45 - Starting ColegioApplication using Java 23.0.1 with PID 14004 (C:\Users\FIC\ws_thiago_spring\Colegio\target\classes started by FIC in C:\Users\FIC\ws_thiago_spring\Colegio)
+2025-04-08 21:32:45 - No active profile set, falling back to 1 default profile: "default"
+2025-04-08 21:32:45 - Info
+2025-04-08 21:32:45 - Warn
+2025-04-08 21:32:45 - Error
+2025-04-08 21:32:45 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:32:45 - Starting service [Tomcat]
+2025-04-08 21:32:45 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-08 21:32:45 - Initializing Spring embedded WebApplicationContext
+2025-04-08 21:32:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-08 21:32:45 - HHH000026: Second-level cache disabled
+2025-04-08 21:32:45 - HikariPool-4 - Starting...
+2025-04-08 21:32:45 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e066bac
+2025-04-08 21:32:45 - HikariPool-4 - Start completed.
+2025-04-08 21:32:45 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-08 21:32:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 21:32:46 - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:32:46 - Started ColegioApplication in 0.949 seconds (process running for 5364.475)
+2025-04-08 21:39:23 - Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:39:23 - Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:39:23 - HikariPool-4 - Shutdown initiated...
+2025-04-08 21:39:23 - HikariPool-4 - Shutdown completed.
+2025-04-08 21:39:24 - Starting ColegioApplication using Java 23.0.1 with PID 14004 (C:\Users\FIC\ws_thiago_spring\Colegio\target\classes started by FIC in C:\Users\FIC\ws_thiago_spring\Colegio)
+2025-04-08 21:39:24 - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-04-08 21:39:24 - No active profile set, falling back to 1 default profile: "default"
+2025-04-08 21:39:25 - Info
+2025-04-08 21:39:25 - Warn
+2025-04-08 21:39:25 - Error
+2025-04-08 21:39:25 - Debug
+2025-04-08 21:39:26 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:39:26 - Starting service [Tomcat]
+2025-04-08 21:39:26 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-08 21:39:26 - Initializing Spring embedded WebApplicationContext
+2025-04-08 21:39:26 - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@318a87eb
+2025-04-08 21:39:26 - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@318a87eb
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/FIC/ws_thiago_spring/Colegio/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		br.edu.senaisp.colegio.model.Aluno
+		br.edu.senaisp.colegio.model.Disciplina
+		br.edu.senaisp.colegio.model.Professor
+		br.edu.senaisp.colegio.model.Sala
+		br.edu.senaisp.colegio.model.Turma]
+	Mapping files names []
+	Properties []
+2025-04-08 21:39:26 - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+2025-04-08 21:39:26 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2025-04-08 21:39:26 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2025-04-08 21:39:26 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2025-04-08 21:39:26 - HHH000026: Second-level cache disabled
+2025-04-08 21:39:26 - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@111451b8
+2025-04-08 21:39:26 - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@111451b8
+2025-04-08 21:39:26 - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@111451b8
+2025-04-08 21:39:26 - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@685fe9f4
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@685fe9f4
+2025-04-08 21:39:26 - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@10ba9ea
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@10ba9ea
+2025-04-08 21:39:26 - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@6ef0a340
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@6ef0a340
+2025-04-08 21:39:26 - Adding type registration byte -> org.hibernate.type.BasicTypeReference@5d5aa6b7
+2025-04-08 21:39:26 - Adding type registration byte -> org.hibernate.type.BasicTypeReference@5d5aa6b7
+2025-04-08 21:39:26 - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@5d5aa6b7
+2025-04-08 21:39:26 - Adding type registration binary -> org.hibernate.type.BasicTypeReference@4addf4a1
+2025-04-08 21:39:26 - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@4addf4a1
+2025-04-08 21:39:26 - Adding type registration [B -> org.hibernate.type.BasicTypeReference@4addf4a1
+2025-04-08 21:39:26 - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@164550e9
+2025-04-08 21:39:26 - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@164550e9
+2025-04-08 21:39:26 - Adding type registration image -> org.hibernate.type.BasicTypeReference@7d441bc2
+2025-04-08 21:39:26 - Adding type registration blob -> org.hibernate.type.BasicTypeReference@75a375c3
+2025-04-08 21:39:26 - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@75a375c3
+2025-04-08 21:39:26 - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@50feff2a
+2025-04-08 21:39:26 - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@6c002fc4
+2025-04-08 21:39:26 - Adding type registration short -> org.hibernate.type.BasicTypeReference@3147b38d
+2025-04-08 21:39:26 - Adding type registration short -> org.hibernate.type.BasicTypeReference@3147b38d
+2025-04-08 21:39:26 - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@3147b38d
+2025-04-08 21:39:26 - Adding type registration integer -> org.hibernate.type.BasicTypeReference@5f24c50b
+2025-04-08 21:39:26 - Adding type registration int -> org.hibernate.type.BasicTypeReference@5f24c50b
+2025-04-08 21:39:26 - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@5f24c50b
+2025-04-08 21:39:26 - Adding type registration long -> org.hibernate.type.BasicTypeReference@7884766a
+2025-04-08 21:39:26 - Adding type registration long -> org.hibernate.type.BasicTypeReference@7884766a
+2025-04-08 21:39:26 - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@7884766a
+2025-04-08 21:39:26 - Adding type registration float -> org.hibernate.type.BasicTypeReference@159708b1
+2025-04-08 21:39:26 - Adding type registration float -> org.hibernate.type.BasicTypeReference@159708b1
+2025-04-08 21:39:26 - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@159708b1
+2025-04-08 21:39:26 - Adding type registration double -> org.hibernate.type.BasicTypeReference@19c00a55
+2025-04-08 21:39:26 - Adding type registration double -> org.hibernate.type.BasicTypeReference@19c00a55
+2025-04-08 21:39:26 - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@19c00a55
+2025-04-08 21:39:26 - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@603588fb
+2025-04-08 21:39:26 - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@603588fb
+2025-04-08 21:39:26 - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@3b5995b1
+2025-04-08 21:39:26 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@3b5995b1
+2025-04-08 21:39:26 - Adding type registration character -> org.hibernate.type.BasicTypeReference@1626c0eb
+2025-04-08 21:39:26 - Adding type registration char -> org.hibernate.type.BasicTypeReference@1626c0eb
+2025-04-08 21:39:26 - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@1626c0eb
+2025-04-08 21:39:26 - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@f2de2d8
+2025-04-08 21:39:26 - Adding type registration string -> org.hibernate.type.BasicTypeReference@4393c196
+2025-04-08 21:39:26 - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@4393c196
+2025-04-08 21:39:26 - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@34903048
+2025-04-08 21:39:26 - Adding type registration characters -> org.hibernate.type.BasicTypeReference@14118fa9
+2025-04-08 21:39:26 - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@14118fa9
+2025-04-08 21:39:26 - Adding type registration [C -> org.hibernate.type.BasicTypeReference@14118fa9
+2025-04-08 21:39:26 - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@744a84d1
+2025-04-08 21:39:26 - Adding type registration text -> org.hibernate.type.BasicTypeReference@298874bf
+2025-04-08 21:39:26 - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@1c2f03b6
+2025-04-08 21:39:26 - Adding type registration clob -> org.hibernate.type.BasicTypeReference@45bab5d
+2025-04-08 21:39:26 - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@45bab5d
+2025-04-08 21:39:26 - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@2497cb0b
+2025-04-08 21:39:26 - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@2497cb0b
+2025-04-08 21:39:26 - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@4e507eaa
+2025-04-08 21:39:26 - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@2a06f665
+2025-04-08 21:39:26 - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@73deb13b
+2025-04-08 21:39:26 - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@690bf3d8
+2025-04-08 21:39:26 - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@2463657d
+2025-04-08 21:39:26 - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@39cb0a4a
+2025-04-08 21:39:26 - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@3f9a3321
+2025-04-08 21:39:26 - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@3f9a3321
+2025-04-08 21:39:26 - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@9b99239
+2025-04-08 21:39:26 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@9b99239
+2025-04-08 21:39:26 - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@36ce46fe
+2025-04-08 21:39:26 - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@36ce46fe
+2025-04-08 21:39:26 - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@57369337
+2025-04-08 21:39:26 - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@57369337
+2025-04-08 21:39:26 - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@39dbb1cb
+2025-04-08 21:39:26 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@39dbb1cb
+2025-04-08 21:39:26 - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7cb6c493
+2025-04-08 21:39:26 - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@388b844d
+2025-04-08 21:39:26 - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@5b471740
+2025-04-08 21:39:26 - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@5b471740
+2025-04-08 21:39:26 - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@3ff6b00a
+2025-04-08 21:39:26 - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@75ae793b
+2025-04-08 21:39:26 - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@11e3222f
+2025-04-08 21:39:26 - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@72fdca44
+2025-04-08 21:39:26 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@72fdca44
+2025-04-08 21:39:26 - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@780142f1
+2025-04-08 21:39:26 - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7ee08b6b
+2025-04-08 21:39:26 - Adding type registration date -> org.hibernate.type.BasicTypeReference@761a3cc2
+2025-04-08 21:39:26 - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@761a3cc2
+2025-04-08 21:39:26 - Adding type registration time -> org.hibernate.type.BasicTypeReference@6aa967af
+2025-04-08 21:39:26 - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@6aa967af
+2025-04-08 21:39:26 - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@18cda6c1
+2025-04-08 21:39:26 - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@18cda6c1
+2025-04-08 21:39:26 - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@18cda6c1
+2025-04-08 21:39:26 - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@628cdd60
+2025-04-08 21:39:26 - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@628cdd60
+2025-04-08 21:39:26 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@628cdd60
+2025-04-08 21:39:26 - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@646282c5
+2025-04-08 21:39:26 - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@116ccb26
+2025-04-08 21:39:26 - Adding type registration instant -> org.hibernate.type.BasicTypeReference@150f73b6
+2025-04-08 21:39:26 - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@150f73b6
+2025-04-08 21:39:26 - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@68abd131
+2025-04-08 21:39:26 - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@68abd131
+2025-04-08 21:39:26 - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@68abd131
+2025-04-08 21:39:26 - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@182f124b
+2025-04-08 21:39:26 - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@6f6ddf93
+2025-04-08 21:39:26 - Adding type registration class -> org.hibernate.type.BasicTypeReference@191830b
+2025-04-08 21:39:26 - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@191830b
+2025-04-08 21:39:26 - Adding type registration currency -> org.hibernate.type.BasicTypeReference@3705f851
+2025-04-08 21:39:26 - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@3705f851
+2025-04-08 21:39:26 - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@3705f851
+2025-04-08 21:39:26 - Adding type registration locale -> org.hibernate.type.BasicTypeReference@57d819b0
+2025-04-08 21:39:26 - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@57d819b0
+2025-04-08 21:39:26 - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@5648d59f
+2025-04-08 21:39:26 - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@5648d59f
+2025-04-08 21:39:26 - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@5b4c9d86
+2025-04-08 21:39:26 - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@5b4c9d86
+2025-04-08 21:39:26 - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@431321ce
+2025-04-08 21:39:26 - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@431321ce
+2025-04-08 21:39:26 - Adding type registration url -> org.hibernate.type.BasicTypeReference@5411b585
+2025-04-08 21:39:26 - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@5411b585
+2025-04-08 21:39:26 - Adding type registration vector -> org.hibernate.type.BasicTypeReference@446566b5
+2025-04-08 21:39:26 - Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@7bfa6312
+2025-04-08 21:39:26 - Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@21bd20f2
+2025-04-08 21:39:26 - Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@785904dd
+2025-04-08 21:39:26 - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@176695ad
+2025-04-08 21:39:26 - Adding type registration object -> org.hibernate.type.JavaObjectType@3f2c86a0
+2025-04-08 21:39:26 - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@3f2c86a0
+2025-04-08 21:39:26 - Adding type registration null -> org.hibernate.type.NullType@775e9b07
+2025-04-08 21:39:26 - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@479106dd
+2025-04-08 21:39:26 - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6479287f
+2025-04-08 21:39:26 - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@3fbbabd6
+2025-04-08 21:39:26 - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@3cbe8985
+2025-04-08 21:39:26 - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@7356d721
+2025-04-08 21:39:26 - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@5e4123e4
+2025-04-08 21:39:26 - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@3c46c6e1
+2025-04-08 21:39:26 - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@74fc924d
+2025-04-08 21:39:26 - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@66dff7e1] into BootstrapContext; was [null]
+2025-04-08 21:39:26 - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@66dff7e1) [was null]
+2025-04-08 21:39:26 - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@6ca45415] into BootstrapContext; was [null]
+2025-04-08 21:39:26 - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7c5add36] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@78e9295d]
+2025-04-08 21:39:26 - Pushing class transformers for PU named 'default' on loading classloader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e
+2025-04-08 21:39:26 - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@66dff7e1]
+2025-04-08 21:39:26 - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@66dff7e1]
+2025-04-08 21:39:26 - HikariPool-5 - configuration:
+2025-04-08 21:39:26 - allowPoolSuspension.............false
+2025-04-08 21:39:26 - autoCommit......................true
+2025-04-08 21:39:26 - catalog.........................none
+2025-04-08 21:39:26 - connectionInitSql...............none
+2025-04-08 21:39:26 - connectionTestQuery.............none
+2025-04-08 21:39:26 - connectionTimeout...............30000
+2025-04-08 21:39:26 - dataSource......................none
+2025-04-08 21:39:26 - dataSourceClassName.............none
+2025-04-08 21:39:26 - dataSourceJNDI..................none
+2025-04-08 21:39:26 - dataSourceProperties............{password=<masked>}
+2025-04-08 21:39:26 - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-04-08 21:39:26 - exceptionOverrideClassName......none
+2025-04-08 21:39:26 - healthCheckProperties...........{}
+2025-04-08 21:39:26 - healthCheckRegistry.............none
+2025-04-08 21:39:26 - idleTimeout.....................600000
+2025-04-08 21:39:26 - initializationFailTimeout.......1
+2025-04-08 21:39:26 - isolateInternalQueries..........false
+2025-04-08 21:39:26 - jdbcUrl.........................jdbc:mysql://localhost:3306/colegiodb?createDatabaseIfNotExist=true
+2025-04-08 21:39:26 - keepaliveTime...................0
+2025-04-08 21:39:26 - leakDetectionThreshold..........0
+2025-04-08 21:39:26 - maxLifetime.....................1800000
+2025-04-08 21:39:26 - maximumPoolSize.................10
+2025-04-08 21:39:26 - metricRegistry..................none
+2025-04-08 21:39:26 - metricsTrackerFactory...........none
+2025-04-08 21:39:26 - minimumIdle.....................10
+2025-04-08 21:39:26 - password........................<masked>
+2025-04-08 21:39:26 - poolName........................"HikariPool-5"
+2025-04-08 21:39:26 - readOnly........................false
+2025-04-08 21:39:26 - registerMbeans..................false
+2025-04-08 21:39:26 - scheduledExecutor...............none
+2025-04-08 21:39:26 - schema..........................none
+2025-04-08 21:39:26 - threadFactory...................internal
+2025-04-08 21:39:26 - transactionIsolation............default
+2025-04-08 21:39:26 - username........................"root"
+2025-04-08 21:39:26 - validationTimeout...............5000
+2025-04-08 21:39:26 - HikariPool-5 - Starting...
+2025-04-08 21:39:26 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e1c8e3e
+2025-04-08 21:39:26 - HikariPool-5 - Start completed.
+2025-04-08 21:39:26 - Database ->
+	   name : MySQL
+	version : 8.0.40
+	  major : 8
+	  minor : 0
+2025-04-08 21:39:26 - Driver ->
+	   name : MySQL Connector/J
+	version : mysql-connector-j-9.1.0 (Revision: cf2917ea44ae2e43a4514a33771035aa99de73bf)
+	  major : 9
+	  minor : 1
+2025-04-08 21:39:26 - JDBC version : 4.2
+2025-04-08 21:39:26 - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.40
+2025-04-08 21:39:26 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-04-08 21:39:26 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-04-08 21:39:26 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-08 21:39:26 - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@22d63a9f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ce820ec)
+2025-04-08 21:39:26 - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71dfae4e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ca5515b)
+2025-04-08 21:39:26 - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fb49292) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@72a63cc8)
+2025-04-08 21:39:26 - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e87510c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@489ef80e)
+2025-04-08 21:39:26 - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6315d38d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2096f35b)
+2025-04-08 21:39:26 - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64ddc974) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5b3c1369)
+2025-04-08 21:39:26 - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@16f83a38) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1630f97)
+2025-04-08 21:39:26 - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b7ff0a6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@30e31dfb)
+2025-04-08 21:39:26 - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@679dd825) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e9b6cf6)
+2025-04-08 21:39:26 - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-04-08 21:39:26 - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-04-08 21:39:26 - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-04-08 21:39:26 - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-04-08 21:39:26 - Adding type registration null -> org.hibernate.type.NullType@a154943
+2025-04-08 21:39:26 - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@775e9b07`
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.DurationType -> basicType@77(java.time.Duration,3015)
+2025-04-08 21:39:26 - Adding type registration Duration -> basicType@77(java.time.Duration,3015)
+2025-04-08 21:39:26 - Adding type registration java.time.Duration -> basicType@77(java.time.Duration,3015)
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@78(java.time.OffsetDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration OffsetDateTime -> basicType@78(java.time.OffsetDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration java.time.OffsetDateTime -> basicType@78(java.time.OffsetDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@79(java.time.ZonedDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration ZonedDateTime -> basicType@79(java.time.ZonedDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration java.time.ZonedDateTime -> basicType@79(java.time.ZonedDateTime,3003)
+2025-04-08 21:39:26 - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@80(java.time.OffsetTime,3007)
+2025-04-08 21:39:26 - Adding type registration OffsetTime -> basicType@80(java.time.OffsetTime,3007)
+2025-04-08 21:39:26 - Adding type registration java.time.OffsetTime -> basicType@80(java.time.OffsetTime,3007)
+2025-04-08 21:39:26 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@22b1913f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2be439bc]
+2025-04-08 21:39:26 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2025-04-08 21:39:26 - Binding entity from annotated class: br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:26 - Import with entity name Aluno
+2025-04-08 21:39:26 - Bind entity br.edu.senaisp.colegio.model.Aluno on table aluno
+2025-04-08 21:39:26 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Not known whether passed class name [br.edu.senaisp.colegio.model.Aluno] is safe
+2025-04-08 21:39:26 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:26 - MetadataSourceProcessor property id with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Aluno:id]
+2025-04-08 21:39:26 - building BasicValue for id
+2025-04-08 21:39:26 - Skipping column re-registration: aluno.id
+2025-04-08 21:39:26 - Building property id
+2025-04-08 21:39:26 - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property email with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Aluno:email]
+2025-04-08 21:39:26 - building BasicValue for email
+2025-04-08 21:39:26 - Skipping column re-registration: aluno.email
+2025-04-08 21:39:26 - Building property email
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property nome with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Aluno:nome]
+2025-04-08 21:39:26 - building BasicValue for nome
+2025-04-08 21:39:26 - Skipping column re-registration: aluno.nome
+2025-04-08 21:39:26 - Building property nome
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='turma_id',referencedColumn='id')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Building property turma
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - Binding entity from annotated class: br.edu.senaisp.colegio.model.Disciplina
+2025-04-08 21:39:26 - Import with entity name Disciplina
+2025-04-08 21:39:26 - Bind entity br.edu.senaisp.colegio.model.Disciplina on table disciplina
+2025-04-08 21:39:26 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Not known whether passed class name [br.edu.senaisp.colegio.model.Disciplina] is safe
+2025-04-08 21:39:26 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Disciplina
+2025-04-08 21:39:26 - MetadataSourceProcessor property id with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Disciplina:id]
+2025-04-08 21:39:26 - building BasicValue for id
+2025-04-08 21:39:26 - Skipping column re-registration: disciplina.id
+2025-04-08 21:39:26 - Building property id
+2025-04-08 21:39:26 - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property duracaoH with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Disciplina:duracaoH]
+2025-04-08 21:39:26 - building BasicValue for duracaoH
+2025-04-08 21:39:26 - Skipping column re-registration: disciplina.duracaoh
+2025-04-08 21:39:26 - Building property duracaoH
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property titulo with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Disciplina:titulo]
+2025-04-08 21:39:26 - building BasicValue for titulo
+2025-04-08 21:39:26 - Skipping column re-registration: disciplina.titulo
+2025-04-08 21:39:26 - Building property titulo
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - Binding entity from annotated class: br.edu.senaisp.colegio.model.Professor
+2025-04-08 21:39:26 - Import with entity name Professor
+2025-04-08 21:39:26 - Bind entity br.edu.senaisp.colegio.model.Professor on table professor
+2025-04-08 21:39:26 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Not known whether passed class name [br.edu.senaisp.colegio.model.Professor] is safe
+2025-04-08 21:39:26 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Professor
+2025-04-08 21:39:26 - MetadataSourceProcessor property id with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Professor:id]
+2025-04-08 21:39:26 - building BasicValue for id
+2025-04-08 21:39:26 - Skipping column re-registration: professor.id
+2025-04-08 21:39:26 - Building property id
+2025-04-08 21:39:26 - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property name with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Professor:name]
+2025-04-08 21:39:26 - building BasicValue for name
+2025-04-08 21:39:26 - Skipping column re-registration: professor.name
+2025-04-08 21:39:26 - Building property name
+2025-04-08 21:39:26 - Binding column: IndexColumn(column='turmas_ORDER')
+2025-04-08 21:39:26 - HikariPool-5 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn(column='turmas_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='turmas_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='professor_id')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='turma_id')
+2025-04-08 21:39:26 - Collection role: br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:26 - Building property turmas
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - Binding entity from annotated class: br.edu.senaisp.colegio.model.Turma
+2025-04-08 21:39:26 - Import with entity name Turma
+2025-04-08 21:39:26 - Bind entity br.edu.senaisp.colegio.model.Turma on table turma
+2025-04-08 21:39:26 - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Not known whether passed class name [br.edu.senaisp.colegio.model.Turma] is safe
+2025-04-08 21:39:26 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Turma
+2025-04-08 21:39:26 - MetadataSourceProcessor property id with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Turma:id]
+2025-04-08 21:39:26 - building BasicValue for id
+2025-04-08 21:39:26 - Skipping column re-registration: turma.id
+2025-04-08 21:39:26 - Building property id
+2025-04-08 21:39:26 - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b9e73f
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Binding column: IndexColumn(column='alunos_ORDER')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn(column='alunos_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='alunos_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - Collection role: br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:26 - Building property alunos
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='disciplina_id')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Building property disciplina
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property nome with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Turma:nome]
+2025-04-08 21:39:26 - building BasicValue for nome
+2025-04-08 21:39:26 - Skipping column re-registration: turma.nome
+2025-04-08 21:39:26 - Building property nome
+2025-04-08 21:39:26 - Binding column: IndexColumn(column='professores_ORDER')
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn(column='professores_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn(column='professores_KEY')
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedJoinColumn()
+2025-04-08 21:39:26 - Collection role: br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:26 - Building property professores
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property nr_sala with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Turma.sala:nr_sala]
+2025-04-08 21:39:26 - building BasicValue for nr_sala
+2025-04-08 21:39:26 - Skipping column re-registration: turma.nr_sala
+2025-04-08 21:39:26 - Building property nr_sala
+2025-04-08 21:39:26 - Binding column: AnnotatedColumn()
+2025-04-08 21:39:26 - MetadataSourceProcessor property predio with lazy=false
+2025-04-08 21:39:26 - Attempting to locate auto-apply AttributeConverter for property [br.edu.senaisp.colegio.model.Turma.sala:predio]
+2025-04-08 21:39:26 - building BasicValue for predio
+2025-04-08 21:39:26 - Skipping column re-registration: turma.predio
+2025-04-08 21:39:26 - Building property predio
+2025-04-08 21:39:26 - Building property sala
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - HikariPool-5 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for email
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for nome
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for duracaoH
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for titulo
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for name
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for id
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for nome
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for nr_sala
+2025-04-08 21:39:26 - Starting `BasicValueBinder#fillSimpleValue` for predio
+2025-04-08 21:39:26 - Forcing column [id] to be non-null as it is part of the primary key for table [aluno]
+2025-04-08 21:39:26 - Forcing column [id] to be non-null as it is part of the primary key for table [disciplina]
+2025-04-08 21:39:26 - Forcing column [id] to be non-null as it is part of the primary key for table [professor]
+2025-04-08 21:39:26 - Forcing column [id] to be non-null as it is part of the primary key for table [turma]
+2025-04-08 21:39:26 - Second pass for collection: br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:26 - Binding a ManyToMany: br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - Forcing column [professor_id] to be non-null as it is part of the primary key for table [professor_turma]
+2025-04-08 21:39:26 - Forcing column [turma_id] to be non-null as it is part of the primary key for table [professor_turma]
+2025-04-08 21:39:26 - Mapped collection key: professor_id, element: turma_id
+2025-04-08 21:39:26 - Building property turma
+2025-04-08 21:39:26 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4484ed04
+2025-04-08 21:39:26 - Second pass for collection: br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:26 - Binding a OneToMany: br.edu.senaisp.colegio.model.Turma.alunos through a foreign key
+2025-04-08 21:39:26 - Mapping collection: br.edu.senaisp.colegio.model.Turma.alunos -> aluno
+2025-04-08 21:39:26 - Retrieving property br.edu.senaisp.colegio.model.Aluno.turma
+2025-04-08 21:39:26 - Mapped collection key: turma_id, one-to-many: br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:26 - Second pass for collection: br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:26 - Binding a ManyToMany: br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:26 - HHH000194: Package not found or no package-info.java: br.edu.senaisp.colegio.model
+2025-04-08 21:39:26 - Retrieving property br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:26 - Mapped collection key: turma_id, element: professor_id
+2025-04-08 21:39:26 - Processing association property references
+2025-04-08 21:39:26 - Processing association property references
+2025-04-08 21:39:26 - HikariPool-5 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-04-08 21:39:26 - Building session factory
+2025-04-08 21:39:26 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-04-08 21:39:26 - Instantiating SessionFactory with settings: {java.specification.version=23, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@2ef2afc9, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Users\FIC\ws_thiago_spring\Colegio\target\classes;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.4.3\spring-boot-starter-data-jpa-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.3\spring-boot-starter-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.3\spring-boot-starter-logging-3.4.3.jar;C:\Users\FIC\.m2\repository\ch\qos\logback\logback-classic\1.5.16\logback-classic-1.5.16.jar;C:\Users\FIC\.m2\repository\ch\qos\logback\logback-core\1.5.16\logback-core-1.5.16.jar;C:\Users\FIC\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\FIC\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\FIC\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\FIC\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\FIC\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.3\spring-boot-starter-jdbc-3.4.3.jar;C:\Users\FIC\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-jdbc\6.2.3\spring-jdbc-6.2.3.jar;C:\Users\FIC\.m2\repository\org\hibernate\orm\hibernate-core\6.6.8.Final\hibernate-core-6.6.8.Final.jar;C:\Users\FIC\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\FIC\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\FIC\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\FIC\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\FIC\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\FIC\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\FIC\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\FIC\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\FIC\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\FIC\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\FIC\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\FIC\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\FIC\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\FIC\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\FIC\.m2\repository\org\springframework\data\spring-data-jpa\3.4.3\spring-data-jpa-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\data\spring-data-commons\3.4.3\spring-data-commons-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-orm\6.2.3\spring-orm-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-context\6.2.3\spring-context-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-aop\6.2.3\spring-aop-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-tx\6.2.3\spring-tx-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-beans\6.2.3\spring-beans-6.2.3.jar;C:\Users\FIC\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-aspects\6.2.3\spring-aspects-6.2.3.jar;C:\Users\FIC\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\FIC\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.4.3\spring-boot-starter-validation-3.4.3.jar;C:\Users\FIC\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.36\tomcat-embed-el-10.1.36.jar;C:\Users\FIC\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\FIC\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.3\spring-boot-starter-web-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.3\spring-boot-starter-json-3.4.3.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.2\jackson-datatype-jdk8-2.18.2.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.2\jackson-datatype-jsr310-2.18.2.jar;C:\Users\FIC\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.2\jackson-module-parameter-names-2.18.2.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.3\spring-boot-starter-tomcat-3.4.3.jar;C:\Users\FIC\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.36\tomcat-embed-core-10.1.36.jar;C:\Users\FIC\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.36\tomcat-embed-websocket-10.1.36.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-web\6.2.3\spring-web-6.2.3.jar;C:\Users\FIC\.m2\repository\io\micrometer\micrometer-observation\1.14.4\micrometer-observation-1.14.4.jar;C:\Users\FIC\.m2\repository\io\micrometer\micrometer-commons\1.14.4\micrometer-commons-1.14.4.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-webmvc\6.2.3\spring-webmvc-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-expression\6.2.3\spring-expression-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-devtools\3.4.3\spring-boot-devtools-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar;C:\Users\FIC\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.3\spring-boot-autoconfigure-3.4.3.jar;C:\Users\FIC\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\FIC\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\FIC\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-core\6.2.3\spring-core-6.2.3.jar;C:\Users\FIC\.m2\repository\org\springframework\spring-jcl\6.2.3\spring-jcl-6.2.3.jar, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, catalina.useNaming=false, java.vendor.url=https://adoptium.net/, user.timezone=America/Sao_Paulo, jakarta.persistence.sharedCache.mode=UNSPECIFIED, org.jboss.logging.provider=slf4j, os.name=Windows 10, java.vm.specification.version=23, APPLICATION_NAME=colegio, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-5), sun.java.launcher=SUN_STANDARD, user.country=BR, sun.boot.library.path=C:\Users\FIC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin, sun.java.command=br.edu.senaisp.colegio.ColegioApplication, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-5), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@6da9ed64, jdk.debug=release, sun.cpu.endian=little, hibernate.cdi.extensions=true, user.home=C:\Users\FIC, user.language=pt, java.specification.vendor=Oracle Corporation, java.version.date=2024-10-15, java.home=C:\Users\FIC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=23.0.1+11, user.name=FIC, stdout.encoding=UTF-8, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Temurin-23.0.1+11, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\FIC\AppData\Local\Temp\, catalina.home=C:\Users\FIC\AppData\Local\Temp\tomcat.8080.1931448841994827447, java.version=23.0.1, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\Users\FIC\ws_thiago_spring\Colegio, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=14004, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=C:\Users\FIC\AppData\Local\Temp\tomcat.8080.1931448841994827447, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@54b72437, native.encoding=Cp1252, java.library.path=C:\Users\FIC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/FIC/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin/server;C:/Users/FIC/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Users\FIC\AppData\Local\Microsoft\WindowsApps;C:\Users\FIC\AppData\Local\Programs\Git\cmd;C:\Windows\System32;;., stderr.encoding=UTF-8, java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, sharing, java.vm.version=23.0.1+11, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-5), java.class.version=67.0, LOGGED_APPLICATION_NAME=[colegio] }
+2025-04-08 21:39:26 - Session factory constructed with filter configurations : {}
+2025-04-08 21:39:26 - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-04-08 21:39:26 - Trying to load META-INF/validation.xml via TCCL
+2025-04-08 21:39:26 - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-04-08 21:39:26 - No META-INF/validation.xml found. Using annotation based configuration only.
+2025-04-08 21:39:26 - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2025-04-08 21:39:26 - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@750aca74
+2025-04-08 21:39:27 - Loaded expression factory via original TCCL
+2025-04-08 21:39:27 - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-04-08 21:39:27 - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-04-08 21:39:27 - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-04-08 21:39:27 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-04-08 21:39:27 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-04-08 21:39:27 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Professor] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Professor
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Disciplina] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Disciplina
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Turma] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Turma
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Aluno] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:27 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24ab124b
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@622b003] under count; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@5e7e21b9] under every; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@1f668218] under any; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2c306e63] under sinh; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3f81714e] under cosh; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@105dfcee] under tanh; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3b80cabf] under pi; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@14ece8da] under log; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : length -> character_length
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@2053f008] under position; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@5f16c260] under overlay; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@627e3e0f] under trim; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@1127a0a2] under cast; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2e4bd13e] under collate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@47271355] under extract; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@543ad3f8] under ifnull; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@78b45b6d] under pad; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@806b764] under str; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@77c4b08a] under format; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@75630899] under timestampadd; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@2fd65a6b] under timestampdiff; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : dateadd -> timestampadd
+2025-04-08 21:39:27 - Registering alternate key : datediff -> timestampdiff
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@12566562] under current_date; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@4044d742] under current_time; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@2d0e2813] under current_timestamp; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : current date -> current_date
+2025-04-08 21:39:27 - Registering alternate key : current time -> current_time
+2025-04-08 21:39:27 - Registering alternate key : current timestamp -> current_timestamp
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@30163adb] under local_date; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@114a24ce] under local_time; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@77520f62] under local_datetime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@2bc0ff2b] under offset_datetime; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : local date -> local_date
+2025-04-08 21:39:27 - Registering alternate key : local time -> local_time
+2025-04-08 21:39:27 - Registering alternate key : local datetime -> local_datetime
+2025-04-08 21:39:27 - Registering alternate key : offset datetime -> offset_datetime
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@2a01c86a] under instant; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : current_instant -> instant
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@6aade5b0] under sql; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@14ece8da
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log2)] under log2; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(reverse)] under reverse; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(space)] under space; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@d63de98] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@21f651b8] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(day)] under day; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(month)] under month; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(year)] under year; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(hour)] under hour; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(minute)] under minute; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(second)] under second; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(microsecond)] under microsecond; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofweek)] under dayofweek; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofmonth)] under dayofmonth; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : day -> dayofmonth
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofyear)] under dayofyear; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(week)] under week; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(quarter)] under quarter; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(monthname)] under monthname; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayname)] under dayname; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_day)] under last_day; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(date)] under date; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(timestamp)] under timestamp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(time)] under time; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_date)] under utc_date; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_time)] under utc_time; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_timestamp)] under utc_timestamp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rand)] under rand; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(crc32)] under crc32; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha1)] under sha1; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha2)] under sha2; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha)] under sha; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_length)] under bit_length; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was NamedSqmFunctionTemplate(octet_length)
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(instr)] under instr; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5108f74] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@2053f008
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curtime)] under curtime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curdate)] under curdate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(now)] under now; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TruncFunction@957a03] under trunc; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : truncate -> trunc
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(insert)] under insert; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@1391e397] under bitand; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@790bcc] under bitor; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@1135f98] under bitxor; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2a7d68db] under bitnot; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(datediff)] under datediff; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(adddate)] under adddate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subdate)] under subdate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(addtime)] under addtime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subtime)] under subtime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@366cab58] under format; prior registration was org.hibernate.dialect.function.FormatFunction@77c4b08a
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(makedate)] under makedate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(maketime)] under maketime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@114a24ce
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@77520f62
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was NamedSqmFunctionTemplate(localtime)
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7e03e132] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3b80cabf
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@65f79ef5] under chr; prior registration was null
+2025-04-08 21:39:27 - Registering alternate key : char -> chr
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@248d1920] under sysdate; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@77e84082] under rank; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@1683353c] under dense_rank; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@4f5a012f] under percent_rank; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@35245fd] under cume_dist; prior registration was null
+2025-04-08 21:39:27 - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@368be945] under listagg; prior registration was null
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-04-08 21:39:27 - abs(NUMERIC arg)
+2025-04-08 21:39:27 - Double acos(NUMERIC arg)
+2025-04-08 21:39:27 - adddate(DATE datetime, INTEGER days)
+2025-04-08 21:39:27 - addtime(TIME datetime, TIME time)
+2025-04-08 21:39:27 - Boolean any(BOOLEAN arg)
+2025-04-08 21:39:27 - Integer ascii(STRING arg)
+2025-04-08 21:39:27 - Double asin(NUMERIC arg)
+2025-04-08 21:39:27 - Double atan(NUMERIC arg)
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ab94166
+2025-04-08 21:39:27 - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2025-04-08 21:39:27 - avg(arg)
+2025-04-08 21:39:27 - bit_and(arg)
+2025-04-08 21:39:27 - Integer bit_length(STRING_OR_CLOB arg)
+2025-04-08 21:39:27 - bit_or(arg)
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=6, active=0, idle=6, waiting=0)
+2025-04-08 21:39:27 - bitand(arg0, arg1)
+2025-04-08 21:39:27 - bitnot(arg)
+2025-04-08 21:39:27 - bitor(arg0, arg1)
+2025-04-08 21:39:27 - bitxor(arg0, arg1)
+2025-04-08 21:39:27 - cast(arg as Type)
+2025-04-08 21:39:27 - ceiling(NUMERIC arg)
+2025-04-08 21:39:27 - Character char(INTEGER arg)
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20e54a49
+2025-04-08 21:39:27 - Integer character_length(STRING_OR_CLOB arg)
+2025-04-08 21:39:27 - Character chr(INTEGER arg)
+2025-04-08 21:39:27 - coalesce(arg0[, arg1[, ...]])
+2025-04-08 21:39:27 - String collate(STRING string as COLLATION collation)
+2025-04-08 21:39:27 - String concat(STRING string0[, STRING string1[, ...]])
+2025-04-08 21:39:27 - Double cos(NUMERIC arg)
+2025-04-08 21:39:27 - Double cosh(NUMERIC arg)
+2025-04-08 21:39:27 - Double cot(NUMERIC arg)
+2025-04-08 21:39:27 - Long count([distinct ]{arg|*})
+2025-04-08 21:39:27 - Integer crc32(arg)
+2025-04-08 21:39:27 - Double cume_dist([arg0[, ...]])
+2025-04-08 21:39:27 - Date curdate()
+2025-04-08 21:39:27 - Date current date
+2025-04-08 21:39:27 - Time current time
+2025-04-08 21:39:27 - Timestamp current timestamp
+2025-04-08 21:39:27 - Date current_date
+2025-04-08 21:39:27 - Instant current_instant
+2025-04-08 21:39:27 - Time current_time
+2025-04-08 21:39:27 - Timestamp current_timestamp
+2025-04-08 21:39:27 - Time curtime()
+2025-04-08 21:39:27 - Date date(arg)
+2025-04-08 21:39:27 - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-04-08 21:39:27 - Integer datediff(DATE end, DATE start)
+2025-04-08 21:39:27 - Integer day(DATE arg)
+2025-04-08 21:39:27 - String dayname(DATE arg)
+2025-04-08 21:39:27 - Integer dayofmonth(DATE arg)
+2025-04-08 21:39:27 - Integer dayofweek(DATE arg)
+2025-04-08 21:39:27 - Integer dayofyear(DATE arg)
+2025-04-08 21:39:27 - Double degrees(NUMERIC arg)
+2025-04-08 21:39:27 - Long dense_rank([arg0[, ...]])
+2025-04-08 21:39:27 - Boolean every(BOOLEAN arg)
+2025-04-08 21:39:27 - Double exp(NUMERIC arg)
+2025-04-08 21:39:27 - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2025-04-08 21:39:27 - first_valueANY value
+2025-04-08 21:39:27 - floor(NUMERIC arg)
+2025-04-08 21:39:27 - String format(TEMPORAL datetime as STRING pattern)
+2025-04-08 21:39:27 - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-04-08 21:39:27 - Integer hour(TIME arg)
+2025-04-08 21:39:27 - ifnull(arg0, arg1)
+2025-04-08 21:39:27 - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2025-04-08 21:39:27 - Instant instant
+2025-04-08 21:39:27 - Integer instr(STRING string, STRING pattern[, INTEGER start[, INTEGER occurrence]])
+2025-04-08 21:39:27 - lagANY value[, INTEGER offset[, ANY default]]
+2025-04-08 21:39:27 - Date last_day(DATE arg)
+2025-04-08 21:39:27 - last_valueANY value
+2025-04-08 21:39:27 - leadANY value[, INTEGER offset[, ANY default]]
+2025-04-08 21:39:27 - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2025-04-08 21:39:27 - String left(STRING string, INTEGER length)
+2025-04-08 21:39:27 - Integer length(STRING_OR_CLOB arg)
+2025-04-08 21:39:27 - String listagg(STRING arg0, STRING arg1)
+2025-04-08 21:39:27 - Double ln(NUMERIC arg)
+2025-04-08 21:39:27 - LocalDate local date
+2025-04-08 21:39:27 - LocalDateTime local datetime
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=7, active=0, idle=7, waiting=0)
+2025-04-08 21:39:27 - LocalTime local time
+2025-04-08 21:39:27 - LocalDate local_date
+2025-04-08 21:39:27 - LocalDateTime local_datetime
+2025-04-08 21:39:27 - LocalTime local_time
+2025-04-08 21:39:27 - Timestamp localtime
+2025-04-08 21:39:27 - Timestamp localtimestamp
+2025-04-08 21:39:27 - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2025-04-08 21:39:27 - Double log(NUMERIC arg0[, NUMERIC arg1])
+2025-04-08 21:39:27 - Double log10(NUMERIC arg)
+2025-04-08 21:39:27 - Double log2(NUMERIC arg)
+2025-04-08 21:39:27 - String lower(STRING string)
+2025-04-08 21:39:27 - String lpad(string, length[, padding])
+2025-04-08 21:39:27 - String ltrim(STRING string[, STRING characters])
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52ecb126
+2025-04-08 21:39:27 - Date makedate(INTEGER year, INTEGER dayofyear)
+2025-04-08 21:39:27 - Time maketime(INTEGER hour, INTEGER min, INTEGER sec)
+2025-04-08 21:39:27 - max(COMPARABLE arg)
+2025-04-08 21:39:27 - String md5(arg)
+2025-04-08 21:39:27 - Integer microsecond(TIME arg)
+2025-04-08 21:39:27 - min(COMPARABLE arg)
+2025-04-08 21:39:27 - Integer minute(TIME arg)
+2025-04-08 21:39:27 - Integer mod(INTEGER arg0, INTEGER arg1)
+2025-04-08 21:39:27 - Integer month(DATE arg)
+2025-04-08 21:39:27 - String monthname(DATE arg)
+2025-04-08 21:39:27 - Timestamp now()
+2025-04-08 21:39:27 - nth_valueANY value, INTEGER nth
+2025-04-08 21:39:27 - nullif(arg0, arg1)
+2025-04-08 21:39:27 - Integer octet_length(STRING_OR_CLOB arg)
+2025-04-08 21:39:27 - OffsetDateTime offset datetime
+2025-04-08 21:39:27 - OffsetDateTime offset_datetime
+2025-04-08 21:39:27 - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+2025-04-08 21:39:27 - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2025-04-08 21:39:27 - Double percent_rank([arg0[, ...]])
+2025-04-08 21:39:27 - Double pi
+2025-04-08 21:39:27 - Integer position(STRING pattern in STRING string)
+2025-04-08 21:39:27 - Double power(NUMERIC arg0, NUMERIC arg1)
+2025-04-08 21:39:27 - Integer quarter(DATE arg)
+2025-04-08 21:39:27 - Double radians(NUMERIC arg)
+2025-04-08 21:39:27 - Double rand([INTEGER seed])
+2025-04-08 21:39:27 - Long rank([arg0[, ...]])
+2025-04-08 21:39:27 - String repeat(STRING string, INTEGER times)
+2025-04-08 21:39:27 - String replace(STRING string, STRING pattern, STRING replacement)
+2025-04-08 21:39:27 - String reverse(STRING arg)
+2025-04-08 21:39:27 - String right(STRING string, INTEGER length)
+2025-04-08 21:39:27 - round(NUMERIC number[, INTEGER places])
+2025-04-08 21:39:27 - Long row_number()
+2025-04-08 21:39:27 - String rpad(string, length[, padding])
+2025-04-08 21:39:27 - String rtrim(STRING string[, STRING characters])
+2025-04-08 21:39:27 - Integer second(TIME arg)
+2025-04-08 21:39:27 - String sha(arg)
+2025-04-08 21:39:27 - String sha1(arg)
+2025-04-08 21:39:27 - String sha2(arg0, arg1)
+2025-04-08 21:39:27 - Integer sign(NUMERIC arg)
+2025-04-08 21:39:27 - Double sin(NUMERIC arg)
+2025-04-08 21:39:27 - Double sinh(NUMERIC arg)
+2025-04-08 21:39:27 - String soundex(arg)
+2025-04-08 21:39:27 - String space(INTEGER arg)
+2025-04-08 21:39:27 - Object sql
+2025-04-08 21:39:27 - Double sqrt(NUMERIC arg)
+2025-04-08 21:39:27 - Double stddev(NUMERIC arg)
+2025-04-08 21:39:27 - Double stddev_pop(NUMERIC arg)
+2025-04-08 21:39:27 - Double stddev_samp(NUMERIC arg)
+2025-04-08 21:39:27 - String str(arg)
+2025-04-08 21:39:27 - subdate(DATE datetime, INTEGER days)
+2025-04-08 21:39:27 - String substr(STRING string, INTEGER start[, INTEGER length])
+2025-04-08 21:39:27 - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2025-04-08 21:39:27 - subtime(TIME datetime, TIME time)
+2025-04-08 21:39:27 - sum(arg)
+2025-04-08 21:39:27 - Timestamp sysdate()
+2025-04-08 21:39:27 - Double tan(NUMERIC arg)
+2025-04-08 21:39:27 - Double tanh(NUMERIC arg)
+2025-04-08 21:39:27 - String time(arg)
+2025-04-08 21:39:27 - Timestamp timestamp(arg0[, arg1])
+2025-04-08 21:39:27 - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2025-04-08 21:39:27 - Long|Double timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2025-04-08 21:39:27 - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2025-04-08 21:39:27 - trunc( ... )
+2025-04-08 21:39:27 - truncate( ... )
+2025-04-08 21:39:27 - String upper(STRING string)
+2025-04-08 21:39:27 - Date utc_date
+2025-04-08 21:39:27 - Time utc_time
+2025-04-08 21:39:27 - Timestamp utc_timestamp
+2025-04-08 21:39:27 - Double var_pop(NUMERIC arg)
+2025-04-08 21:39:27 - Double var_samp(NUMERIC arg)
+2025-04-08 21:39:27 - Double variance(NUMERIC arg)
+2025-04-08 21:39:27 - Integer week(DATE arg)
+2025-04-08 21:39:27 - Integer year(DATE arg)
+2025-04-08 21:39:27 - Starting QueryInterpretationCache(2048)
+2025-04-08 21:39:27 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2025-04-08 21:39:27 - Configured EntityCopyObserver strategy: disallow
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Professor] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Professor
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=8, active=0, idle=8, waiting=0)
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ba6bde
+2025-04-08 21:39:27 - HHH000513: Unable to create the ReflectionOptimizer for [br.edu.senaisp.colegio.model.Professor]: private accessor [name]
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Disciplina#turma` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Disciplina#turma` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Disciplina] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Disciplina
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=9, active=0, idle=9, waiting=0)
+2025-04-08 21:39:27 - HHH000513: Unable to create the ReflectionOptimizer for [br.edu.senaisp.colegio.model.Disciplina]: private accessor [duracaoH]
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Disciplina#turma` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Turma#disciplina` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Turma#disciplina` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Turma] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Turma
+2025-04-08 21:39:27 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63a44e72
+2025-04-08 21:39:27 - HHH000513: Unable to create the ReflectionOptimizer for [br.edu.senaisp.colegio.model.Turma]: private accessor [alunos]
+2025-04-08 21:39:27 - To-one property `br.edu.senaisp.colegio.model.Turma#disciplina` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2025-04-08 21:39:27 - Not known whether passed class name [br.edu.senaisp.colegio.model.Aluno] is safe
+2025-04-08 21:39:27 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:27 - HikariPool-5 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:39:27 - HHH000513: Unable to create the ReflectionOptimizer for [br.edu.senaisp.colegio.model.Aluno]: private accessor [email]
+2025-04-08 21:39:27 - Skipping collection row updates - br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:27 - Skipping collection (re)creation - br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:27 - Skipping collection row deletions - br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:27 - Skipping collection removals - br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:27 - Skipping collection inserts - br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:27 - Skipping collection row updates - br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:27 - Skipping collection row deletions - br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:27 - Skipping collection removals - br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:27 - Starting post-init callbacks
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[br.edu.senaisp.colegio.model.Professor.turmas#{element}]) - element descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Professor.turmas)#finishInitialization
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Professor.turmas) - key descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : Entity(br.edu.senaisp.colegio.model.Professor) `staticFetchableList` generator
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : To-one key - NavigableRole[br.edu.senaisp.colegio.model.Disciplina.turma]
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : Entity(br.edu.senaisp.colegio.model.Disciplina) `staticFetchableList` generator
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[br.edu.senaisp.colegio.model.Turma.alunos#{element}]) - element descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Turma.alunos)#finishInitialization
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Turma.alunos) - key descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : To-one key - NavigableRole[br.edu.senaisp.colegio.model.Turma.disciplina]
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[br.edu.senaisp.colegio.model.Turma.professores#{element}]) - element descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Turma.professores)#finishInitialization
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping(br.edu.senaisp.colegio.model.Turma.professores) - key descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : EmbeddableMappingType(br.edu.senaisp.colegio.model.Turma.sala)#finishInitialization
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : Entity(br.edu.senaisp.colegio.model.Turma) `staticFetchableList` generator
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : To-one key - NavigableRole[br.edu.senaisp.colegio.model.Aluno.turma]
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : Entity(br.edu.senaisp.colegio.model.Aluno) `staticFetchableList` generator
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[br.edu.senaisp.colegio.model.Turma.alunos#{element}]) - element descriptor
+2025-04-08 21:39:27 - Starting PostInitCallbackEntry : EmbeddableMappingType(br.edu.senaisp.colegio.model.Turma.sala)#initColumnMappings
+2025-04-08 21:39:27 - Created new SQL alias : p1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Professor)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor] for NavigablePath [br.edu.senaisp.colegio.model.Professor] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-EntityResultImpl [br.edu.senaisp.colegio.model.Professor]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Professor.name]
+ |  \-DelayedCollectionFetch [br.edu.senaisp.colegio.model.Professor.turmas]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (p1 : br.edu.senaisp.colegio.model.Professor) {
+          primaryTableReference : professor as p1_0
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for entity: br.edu.senaisp.colegio.model.Professor
+2025-04-08 21:39:27 -  Version select: select id from professor where id=?
+2025-04-08 21:39:27 -  Insert (0): insert into professor (name) values (?)
+2025-04-08 21:39:27 -  Update (0): update professor set name=? where id=?
+2025-04-08 21:39:27 -  Delete (0): delete from professor where id=?
+2025-04-08 21:39:27 - Created new SQL alias : d1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Disciplina)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Disciplina] for NavigablePath [br.edu.senaisp.colegio.model.Disciplina] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@546fdaaf] with identifierForTableGroup [br.edu.senaisp.colegio.model.Disciplina.turma] for NavigablePath [br.edu.senaisp.colegio.model.Disciplina.turma] 
+2025-04-08 21:39:27 - Created new SQL alias : t1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardVirtualTableGroup(br.edu.senaisp.colegio.model.Disciplina.turma.sala)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Disciplina.turma.sala] for NavigablePath [br.edu.senaisp.colegio.model.Disciplina.turma.sala] 
+2025-04-08 21:39:27 - Created new SQL alias : a1_0
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@7d143fa4] with identifierForTableGroup [br.edu.senaisp.colegio.model.Disciplina.turma.alunos] for NavigablePath [br.edu.senaisp.colegio.model.Disciplina.turma.alunos] 
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element})] with identifierForTableGroup [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-EntityResultImpl [br.edu.senaisp.colegio.model.Disciplina]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.duracaoH]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.titulo]
+ |  \-EntityFetchJoinedImpl [br.edu.senaisp.colegio.model.Disciplina.turma]
+ |  |  +-EagerCollectionFetch [br.edu.senaisp.colegio.model.Disciplina.turma.alunos]
+ |  |  |  \-EntityFetchJoinedImpl [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}]
+ |  |  |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}.email]
+ |  |  |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}.nome]
+ |  |  |  |  \-CircularBiDirectionalFetchImpl [br.edu.senaisp.colegio.model.Disciplina.turma.alunos.{element}.turma]
+ |  |  +-CircularBiDirectionalFetchImpl [br.edu.senaisp.colegio.model.Disciplina.turma.disciplina]
+ |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.turma.nome]
+ |  |  +-DelayedCollectionFetch [br.edu.senaisp.colegio.model.Disciplina.turma.professores]
+ |  |  \-EmbeddableFetchImpl [br.edu.senaisp.colegio.model.Disciplina.turma.sala]
+ |  |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.turma.sala.nr_sala]
+ |  |  |  \-BasicFetch [br.edu.senaisp.colegio.model.Disciplina.turma.sala.predio]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (d1 : br.edu.senaisp.colegio.model.Disciplina) {
+          primaryTableReference : disciplina as d1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (t1 : br.edu.senaisp.colegio.model.Disciplina.turma) {
+              primaryTableReference : turma as t1_0
+              TableGroupJoins {
+                 join StandardVirtualTableGroup (null : br.edu.senaisp.colegio.model.Disciplina.turma.sala) {
+                  primaryTableReference : turma as t1_0
+                }
+                left  join OneToManyTableGroup (a1 : br.edu.senaisp.colegio.model.Disciplina.turma.alunos) {
+                  primaryTableReference : aluno as a1_0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for entity: br.edu.senaisp.colegio.model.Disciplina
+2025-04-08 21:39:27 -  Version select: select id from disciplina where id=?
+2025-04-08 21:39:27 -  Insert (0): insert into disciplina (duracaoh,titulo) values (?,?)
+2025-04-08 21:39:27 -  Update (0): update disciplina set duracaoh=?,titulo=? where id=?
+2025-04-08 21:39:27 -  Delete (0): delete from disciplina where id=?
+2025-04-08 21:39:27 - Created new SQL alias : t1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Turma)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma] for NavigablePath [br.edu.senaisp.colegio.model.Turma] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@7570472d] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.disciplina] for NavigablePath [br.edu.senaisp.colegio.model.Turma.disciplina] 
+2025-04-08 21:39:27 - Created new SQL alias : d1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardVirtualTableGroup(br.edu.senaisp.colegio.model.Turma.sala)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.sala] for NavigablePath [br.edu.senaisp.colegio.model.Turma.sala] 
+2025-04-08 21:39:27 - Created new SQL alias : a1_0
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@4e65eafe] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.alunos] for NavigablePath [br.edu.senaisp.colegio.model.Turma.alunos] 
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Turma.alunos.{element})] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.alunos.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Turma.alunos.{element}] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-EntityResultImpl [br.edu.senaisp.colegio.model.Turma]
+ |  +-EagerCollectionFetch [br.edu.senaisp.colegio.model.Turma.alunos]
+ |  |  \-EntityFetchJoinedImpl [br.edu.senaisp.colegio.model.Turma.alunos.{element}]
+ |  |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.alunos.{element}.email]
+ |  |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.alunos.{element}.nome]
+ |  |  |  \-CircularBiDirectionalFetchImpl [br.edu.senaisp.colegio.model.Turma.alunos.{element}.turma]
+ |  +-EntityFetchJoinedImpl [br.edu.senaisp.colegio.model.Turma.disciplina]
+ |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.disciplina.duracaoH]
+ |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.disciplina.titulo]
+ |  |  \-CircularBiDirectionalFetchImpl [br.edu.senaisp.colegio.model.Turma.disciplina.turma]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.nome]
+ |  +-DelayedCollectionFetch [br.edu.senaisp.colegio.model.Turma.professores]
+ |  \-EmbeddableFetchImpl [br.edu.senaisp.colegio.model.Turma.sala]
+ |  |  +-BasicFetch [br.edu.senaisp.colegio.model.Turma.sala.nr_sala]
+ |  |  \-BasicFetch [br.edu.senaisp.colegio.model.Turma.sala.predio]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (t1 : br.edu.senaisp.colegio.model.Turma) {
+          primaryTableReference : turma as t1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (d1 : br.edu.senaisp.colegio.model.Turma.disciplina) {
+              primaryTableReference : disciplina as d1_0
+            }
+             join StandardVirtualTableGroup (null : br.edu.senaisp.colegio.model.Turma.sala) {
+              primaryTableReference : turma as t1_0
+            }
+            left  join OneToManyTableGroup (a1 : br.edu.senaisp.colegio.model.Turma.alunos) {
+              primaryTableReference : aluno as a1_0
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for entity: br.edu.senaisp.colegio.model.Turma
+2025-04-08 21:39:27 -  Version select: select id from turma where id=?
+2025-04-08 21:39:27 -  Insert (0): insert into turma (disciplina_id,nome,nr_sala,predio) values (?,?,?,?)
+2025-04-08 21:39:27 -  Update (0): update turma set disciplina_id=?,nome=?,nr_sala=?,predio=? where id=?
+2025-04-08 21:39:27 -  Delete (0): delete from turma where id=?
+2025-04-08 21:39:27 - Created new SQL alias : a1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Aluno)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Aluno] for NavigablePath [br.edu.senaisp.colegio.model.Aluno] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@3d0f9c39] with identifierForTableGroup [br.edu.senaisp.colegio.model.Aluno.turma] for NavigablePath [br.edu.senaisp.colegio.model.Aluno.turma] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-EntityResultImpl [br.edu.senaisp.colegio.model.Aluno]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Aluno.email]
+ |  +-BasicFetch [br.edu.senaisp.colegio.model.Aluno.nome]
+ |  \-EntityDelayedFetchImpl [br.edu.senaisp.colegio.model.Aluno.turma]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (a1 : br.edu.senaisp.colegio.model.Aluno) {
+          primaryTableReference : aluno as a1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (t1 : br.edu.senaisp.colegio.model.Aluno.turma) {
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for entity: br.edu.senaisp.colegio.model.Aluno
+2025-04-08 21:39:27 -  Version select: select id from aluno where id=?
+2025-04-08 21:39:27 -  Insert (0): insert into aluno (email,nome,turma_id) values (?,?,?)
+2025-04-08 21:39:27 -  Update (0): update aluno set email=?,nome=?,turma_id=? where id=?
+2025-04-08 21:39:27 -  Delete (0): delete from aluno where id=?
+2025-04-08 21:39:27 - Created new SQL alias : t1_0
+2025-04-08 21:39:27 - Registration of TableGroup [CollectionTableGroup(br.edu.senaisp.colegio.model.Professor.turmas)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@2be2cc28] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}] 
+2025-04-08 21:39:27 - Created new SQL alias : t1_1
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@3860bd3d] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}.disciplina] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}.disciplina] 
+2025-04-08 21:39:27 - Created new SQL alias : d1_0
+2025-04-08 21:39:27 - Registration of TableGroup [StandardVirtualTableGroup(br.edu.senaisp.colegio.model.Professor.turmas.{element}.sala)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}.sala] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}.sala] 
+2025-04-08 21:39:27 - Created new SQL alias : a1_0
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@79cf005c] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos] 
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element})] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element}] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@3cd77fd2] with identifierForTableGroup [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element}.turma] for NavigablePath [br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element}.turma] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-CollectionDomainResult [br.edu.senaisp.colegio.model.Professor.turmas]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (t1 : br.edu.senaisp.colegio.model.Professor.turmas) {
+          primaryTableReference : professor_turma as t1_0
+          TableGroupJoins {
+             join LazyTableGroup (t1 : br.edu.senaisp.colegio.model.Professor.turmas.{element}) {
+              primaryTableReference : turma as t1_1
+              TableGroupJoins {
+                left  join LazyTableGroup (d1 : br.edu.senaisp.colegio.model.Professor.turmas.{element}.disciplina) {
+                  primaryTableReference : disciplina as d1_0
+                }
+                 join StandardVirtualTableGroup (null : br.edu.senaisp.colegio.model.Professor.turmas.{element}.sala) {
+                  primaryTableReference : turma as t1_1
+                }
+                left  join OneToManyTableGroup (a1 : br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos) {
+                  primaryTableReference : aluno as a1_0
+                  TableGroupJoins {
+                    left  join LazyTableGroup (t2 : br.edu.senaisp.colegio.model.Professor.turmas.{element}.alunos.{element}.turma) {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for collection: br.edu.senaisp.colegio.model.Professor.turmas
+2025-04-08 21:39:27 -  Row insert: insert into professor_turma (professor_id,turma_id) values (?,?)
+2025-04-08 21:39:27 -  Row delete: delete from professor_turma where professor_id=? and turma_id=?
+2025-04-08 21:39:27 -  One-shot delete: delete from professor_turma where professor_id=?
+2025-04-08 21:39:27 - Created new SQL alias : a1_0
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@2a26294d] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.alunos] for NavigablePath [br.edu.senaisp.colegio.model.Turma.alunos] 
+2025-04-08 21:39:27 - Registration of TableGroup [StandardTableGroup(br.edu.senaisp.colegio.model.Turma.alunos.{element})] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.alunos.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Turma.alunos.{element}] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@4f98f994] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.alunos.{element}.turma] for NavigablePath [br.edu.senaisp.colegio.model.Turma.alunos.{element}.turma] 
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-CollectionDomainResult [br.edu.senaisp.colegio.model.Turma.alunos]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        OneToManyTableGroup (a1 : br.edu.senaisp.colegio.model.Turma.alunos) {
+          primaryTableReference : aluno as a1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (t1 : br.edu.senaisp.colegio.model.Turma.alunos.{element}.turma) {
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for collection: br.edu.senaisp.colegio.model.Turma.alunos
+2025-04-08 21:39:27 - Created new SQL alias : p1_0
+2025-04-08 21:39:27 - Registration of TableGroup [CollectionTableGroup(br.edu.senaisp.colegio.model.Turma.professores)] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.professores] for NavigablePath [br.edu.senaisp.colegio.model.Turma.professores] 
+2025-04-08 21:39:27 - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@42858fd9] with identifierForTableGroup [br.edu.senaisp.colegio.model.Turma.professores.{element}] for NavigablePath [br.edu.senaisp.colegio.model.Turma.professores.{element}] 
+2025-04-08 21:39:27 - Created new SQL alias : p1_1
+2025-04-08 21:39:27 - DomainResult Graph:
+ \-CollectionDomainResult [br.edu.senaisp.colegio.model.Turma.professores]
+
+2025-04-08 21:39:27 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        CollectionTableGroup (p1 : br.edu.senaisp.colegio.model.Turma.professores) {
+          primaryTableReference : professor_turma as p1_0
+          TableGroupJoins {
+             join LazyTableGroup (p1 : br.edu.senaisp.colegio.model.Turma.professores.{element}) {
+              primaryTableReference : professor as p1_1
+            }
+          }
+        }
+      }
+    }
+
+2025-04-08 21:39:27 - Static SQL for collection: br.edu.senaisp.colegio.model.Turma.professores
+2025-04-08 21:39:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08 21:39:27 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@22b1913f] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@32eb6b2]
+2025-04-08 21:39:27 - Checking 0 named HQL queries
+2025-04-08 21:39:27 - Checking 0 named SQL queries
+2025-04-08 21:39:27 - No alter strings for table : aluno
+2025-04-08 21:39:27 - No alter strings for table : disciplina
+2025-04-08 21:39:27 - No alter strings for table : professor
+2025-04-08 21:39:27 - No alter strings for table : professor_turma
+2025-04-08 21:39:27 - No alter strings for table : turma
+2025-04-08 21:39:27 - Registering SessionFactory: af5ecac8-bd04-4653-8cb2-39bc6ad86975 (<unnamed>)
+2025-04-08 21:39:27 - Not binding SessionFactory to JNDI, no JNDI name configured
+2025-04-08 21:39:27 - Instantiated SessionFactory
+2025-04-08 21:39:27 - Statistics initialized [enabled=false]
+2025-04-08 21:39:28 - Loaded expression factory via original TCCL
+2025-04-08 21:39:28 - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-04-08 21:39:28 - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-04-08 21:39:28 - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-04-08 21:39:28 - Trying to load META-INF/validation.xml via user class loader
+2025-04-08 21:39:28 - Trying to load META-INF/validation.xml via TCCL
+2025-04-08 21:39:28 - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-04-08 21:39:28 - No META-INF/validation.xml found. Using annotation based configuration only.
+2025-04-08 21:39:28 - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2025-04-08 21:39:28 - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2025-04-08 21:39:28 - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-04-08 21:39:28 - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-04-08 21:39:28 - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-04-08 21:39:28 - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-04-08 21:39:28 - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-04-08 21:39:28 - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-04-08 21:39:28 - 
+	b.e.s.c.c.AlunoController:
+	{GET [/api/aluno]}: buscarTodos()
+	{GET [/api/aluno/{id}]}: buscarPorId(Long)
+	{POST [/api/aluno]}: inserir(Aluno)
+	{PUT [/api/aluno/{id}]}: alterar(Long,Aluno)
+	{DELETE [/api/aluno/{id}]}: excluir(Long)
+2025-04-08 21:39:28 - 
+	b.e.s.c.c.DisciplinaController:
+	{POST [/api/disciplina]}: gravarDisciplina(Disciplina)
+	{PUT [/api/disciplina/{id}]}: alterarDisciplina(Long,Disciplina)
+	{DELETE [/api/disciplina/{id}]}: deletarDisciplina(Long)
+	{GET [/api/disciplina]}: exibirDisciplinas()
+	{GET [/api/disciplina/{id}]}: exibirUmaDisciplina(Long)
+2025-04-08 21:39:28 - 
+	b.e.s.c.c.ProfessorController:
+	{GET [/api/professor]}: buscarTodos()
+	{GET [/api/professor/{id}]}: buscarPorId(Long)
+	{PUT [/api/professor/{id}]}: alterar(Long,Professor)
+	{POST [/api/professor]}: gravar(Professor)
+	{DELETE [/api/professor/{id}]}: excluir(Long)
+2025-04-08 21:39:28 - 
+	b.e.s.c.c.TurmaController:
+	{DELETE [/api/turma/{id}]}: deletarTurma(Long)
+	{GET [/api/turma/{id}]}: buscarUmaTurma(Long)
+	{GET [/api/turma]}: buscarTodos()
+	{POST [/api/turma]}: inserir(Turma)
+	{PUT [/api/turma/{id}]}: alterar(Long,Turma)
+2025-04-08 21:39:28 - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-04-08 21:39:28 - 'beanNameHandlerMapping' {}
+2025-04-08 21:39:28 - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2025-04-08 21:39:28 - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-08 21:39:28 - Started ColegioApplication in 4.869 seconds (process running for 5767.119)

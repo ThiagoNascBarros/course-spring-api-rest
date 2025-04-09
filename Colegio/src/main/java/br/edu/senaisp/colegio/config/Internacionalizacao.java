@@ -30,6 +30,7 @@ public class Internacionalizacao {
         log.error("Error");
         log.debug("Debug");
         log.trace("Trace");
+        
         return messSource;
     }
 
