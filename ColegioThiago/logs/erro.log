@@ -1216,3 +1216,41 @@
 2025-04-08 21:39:28 - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
 2025-04-08 21:39:28 - Starting ProtocolHandler ["http-nio-8080"]
 2025-04-08 21:39:28 - Started ColegioApplication in 4.869 seconds (process running for 5767.119)
+2025-04-08 21:39:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:39:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:40:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:40:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:40:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:40:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:41:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:41:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:41:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:41:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:42:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:42:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:42:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:42:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:43:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:43:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:43:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:43:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:44:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:44:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:44:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:44:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:45:26 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:45:26 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:45:56 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:45:56 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:46:27 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:46:27 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:46:57 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:46:57 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:47:27 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:47:27 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:47:57 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:47:57 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:48:27 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:48:27 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-08 21:48:57 - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-04-08 21:48:57 - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled.

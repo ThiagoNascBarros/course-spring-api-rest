@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Email"/>
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.LoggerFactory"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="br.edu.senaisp.colegio.ColegioApplication"/>
+    <fullyQualifiedTypeName name="br.edu.senaisp.colegio.exceptions.GlobalExceptionHandler"/>
 </qualifiedTypeNameHistroy>
