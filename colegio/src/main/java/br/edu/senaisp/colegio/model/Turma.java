@@ -27,76 +27,76 @@ import jakarta.validation.constraints.Size;
 
 @Entity
 public class Turma {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	@NotNull
-	@Size(min = 2, max = 100)
-	private String nome;
+    @NotNull
+    @Size(min = 2, max = 100)
+    private String nome;
 
-	@OneToMany(mappedBy = "turma", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JsonManagedReference
-	private List<Aluno> alunos = new ArrayList<>();
+    @OneToMany(mappedBy = "turma", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Aluno> alunos = new ArrayList<>();
 
-	@Embedded
-	private Sala sala;
+    @Embedded
+    private Sala sala;
 
-	@OneToOne
-	@JoinColumn(name = "disciplina_id")
-	private Disciplina disciplina;
-	
-	@JsonProperty(access = Access.WRITE_ONLY)
-	@ManyToMany(mappedBy = "turmas")
-	private Set<Professor> professores 
-							= new HashSet<>(); 
+    @OneToOne
+    @JoinColumn(name = "disciplina_id")
+    private Disciplina disciplina;
 
-	public Long getId() {
-		return id;
-	}
+    @JsonProperty(access = Access.WRITE_ONLY)
+    @ManyToMany(mappedBy = "turmas")
+    private Set<Professor> professores
+            = new HashSet<>();
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public List<Aluno> getAlunos() {
-		return alunos;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public void setAlunos(List<Aluno> alunos) {
-		this.alunos = alunos;
-	}
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
 
-	public Sala getSala() {
-		return sala;
-	}
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
 
-	public void setSala(Sala sala) {
-		this.sala = sala;
-	}
+    public Sala getSala() {
+        return sala;
+    }
 
-	public Disciplina getDisciplina() {
-		return disciplina;
-	}
+    public void setSala(Sala sala) {
+        this.sala = sala;
+    }
 
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
-	}
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
 
-	public Set<Professor> getProfessores() {
-		return professores;
-	}
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
 
-	public void setProfessores(Set<Professor> professores) {
-		this.professores = professores;
-	}
+    public Set<Professor> getProfessores() {
+        return professores;
+    }
+
+    public void setProfessores(Set<Professor> professores) {
+        this.professores = professores;
+    }
 
 }

@@ -19,44 +19,44 @@ import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Professor {
-	
-	@Id
-	@GeneratedValue(strategy = 
-					GenerationType.IDENTITY)
-	private Long id;
-	
-	@NotBlank
-	@Column(length = 120)
-	private String nome;
-	
-	@ManyToMany
-	@JoinTable(name="professor_turma",
-		joinColumns = @JoinColumn(name="professor_id"),
-		inverseJoinColumns = @JoinColumn(name="turma_id") )
-	private Set<Turma> turmas = new HashSet<>();
 
-	public Long getId() {
-		return id;
-	}
+    @Id
+    @GeneratedValue(strategy =
+            GenerationType.IDENTITY)
+    private Long id;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    @NotBlank
+    @Column(length = 120)
+    private String nome;
 
-	public String getNome() {
-		return nome;
-	}
+    @ManyToMany
+    @JoinTable(name = "professor_turma",
+            joinColumns = @JoinColumn(name = "professor_id"),
+            inverseJoinColumns = @JoinColumn(name = "turma_id"))
+    private Set<Turma> turmas = new HashSet<>();
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public Set<Turma> getTurmas() {
-		return turmas;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setTurmas(Set<Turma> turmas) {
-		this.turmas = turmas;
-	}
-	
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Set<Turma> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(Set<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
 }
