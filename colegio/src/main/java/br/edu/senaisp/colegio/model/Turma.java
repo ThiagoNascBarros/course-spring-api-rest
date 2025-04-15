@@ -48,8 +48,7 @@ public class Turma {
 
     @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToMany(mappedBy = "turmas")
-    private Set<Professor> professores
-            = new HashSet<>();
+    private Set<Professor> professores = new HashSet<>();
 
     public Long getId() {
         return id;
