@@ -1,19 +1,17 @@
 package br.edu.senaisp.colegio.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import br.edu.senaisp.colegio.repository.TurmaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import br.edu.senaisp.colegio.model.Aluno;
 import br.edu.senaisp.colegio.model.Turma;
@@ -29,6 +27,12 @@ public class TurmaController {
     @Autowired
     private TurmaRepository repoTurma;
 
+//    Paginação passando parâmetros
+    @GetMapping("/paginacao")
+    public List<Turma> testeJPA_Paginacao(@RequestParam int pag, @RequestParam int qnd) {
+        return repoTurma.findAll(PageRequest.of(pag, qnd)).stream().toList();
+    }
+
     @GetMapping
     public ResponseEntity<List<Turma>> buscarTodos() {
         return ResponseEntity.ok(turmaService.buscarTodos());
@@ -36,20 +40,22 @@ public class TurmaController {
 
     @GetMapping("/jpa")
     public String testeJPA() {
-        List<Turma> t = repoTurma.findByNome("Front-End com React");
-        t.forEach(System.err::println);
+//        Turma tExemplo = new Turma();
+        List<Turma> lista = new ArrayList<>();
+//        tExemplo.setNome("Azure para estrangeiros");
+//
+//        lista = repoTurma.findAll(Example.of(tExemplo));
 
-        long qtd = repoTurma.countByNome("Front-End com React");
-        System.err.println(qtd);
+        lista = repoTurma.buscarPorNomeLike("com");
+
+        lista.forEach(t -> System.err.println(t.getNome() + " " + t.getId()));
+
         return "Foi!";
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public ResponseEntity<Turma> buscarPorId(@PathVariable Long id) throws IOException {
         Turma t = turmaService.buscarPorId(id);
-//		if (t == null)
-//			return ResponseEntity.notFound().build();
-//		else
         return ResponseEntity.ok(t);
     }
 
