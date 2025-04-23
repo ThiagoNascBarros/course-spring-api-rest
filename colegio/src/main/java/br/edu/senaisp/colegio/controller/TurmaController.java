@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.senaisp.colegio.model.dto.ITurmaListaDTO;
+import br.edu.senaisp.colegio.model.dto.TurmaListaSimplesDTO;
 import br.edu.senaisp.colegio.repository.TurmaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
@@ -46,9 +48,11 @@ public class TurmaController {
 //
 //        lista = repoTurma.findAll(Example.of(tExemplo));
 
-        lista = repoTurma.buscarPorNomeLike("com");
+//        List<TurmaListaSimplesDTO> listaDTO = repoTurma.buscarListaCombo("Front-End com React");
 
-        lista.forEach(t -> System.err.println(t.getNome() + " " + t.getId()));
+        List<ITurmaListaDTO> listaDTO = repoTurma.buscarListaComboI("Front-End com React");
+
+        listaDTO.forEach(t -> System.err.println(t.getNome() + "{" + t.getId() + "}"));
 
         return "Foi!";
     }

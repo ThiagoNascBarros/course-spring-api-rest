@@ -19,8 +19,7 @@ import jakarta.validation.constraints.Size;
 @Entity
 public class Aluno {
     @Id
-    @GeneratedValue(strategy =
-            GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     @Size(min = 2, max = 120)
@@ -28,10 +27,8 @@ public class Aluno {
     @Email
     private String email;
 
-    @ManyToOne(fetch = FetchType.LAZY,
-            cascade = CascadeType.REMOVE)
-    @JoinColumn(name = "turma_id"
-            , referencedColumnName = "id")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "turma_id", referencedColumnName = "id")
     @JsonBackReference
     private Turma turma;
 
