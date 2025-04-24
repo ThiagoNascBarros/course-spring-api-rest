@@ -1,59 +1,71 @@
 package br.edu.senaisp.colegio.service;
 
-import br.edu.senaisp.colegio.exception.RecursoNotFound;
 import br.edu.senaisp.colegio.model.Usuario;
 import br.edu.senaisp.colegio.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UsuarioService {
 
     @Autowired
-    private UsuarioRepository repoUsuario;
+    private UsuarioRepository userRepository;
 
-    public List<Usuario> getUsers() {
-        return repoUsuario.findAll();
-    }
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
-    public Usuario getUser(Long id) {
-        return repoUsuario.findById(id).orElseThrow(() -> new RecursoNotFound("Usuário não existe"));
-    }
+    public Usuario gravar(Usuario usuario) {
+        if (userRepository.existsByLogin(usuario.getLogin()))
+            throw new RuntimeException("Login já existe");
 
-    public Usuario createdUser(Usuario usuario) {
-        return repoUsuario.save(usuario);
-    }
-
-    public Usuario updateUser(Usuario usuario, Long id) {
-        Optional<Usuario> usuarioOptional = repoUsuario.findById(id);
-        if (usuarioOptional.isPresent()) {
-            usuario.setId(id);
-            return repoUsuario.save(usuario);
-        } else
-            return null;
-    }
-
-    public Usuario deleteUser(Long id) {
         try {
-            Usuario user = getUser(id);
-            if (user != null) {
-                repoUsuario.deleteById(id);
-
-                user = getUser(id);
-
-                if (user == null) {
-                    return user;
-                }
-            }
-        } catch (RuntimeException e) {
-            throw new RuntimeException(e);
+            usuario.setSenha(passwordEncoder.encode(usuario.getSenha()));
+            return userRepository.save(usuario);
+        } catch (Exception e) {
+            throw new RuntimeException("Erro nos valores enviados para usuário: " + e);
         }
-        return null;
-
     }
 
+    public Usuario alterar(Long id, Usuario usuario) {
+        try {
+            if (id == null || usuario == null)
+                throw new RuntimeException("Erro nos valores enviados para usuário" );
+
+            if (userRepository.findById(id).isEmpty())
+                throw new RuntimeException("Usuário Inexistente!");
+
+            usuario.setId(id);
+            usuario.setSenha(passwordEncoder.encode(usuario.getSenha()));
+            return userRepository.save(usuario);
+        } catch (Exception e) {
+            throw new RuntimeException("Error: " + e.getMessage());
+        }
+    }
+
+    public Usuario buscarPorId(Long id) {
+        if (id == null)
+            throw new RuntimeException("Id não pode ser nulo");
+        return userRepository.findById(id).orElseThrow(() -> new RuntimeException("Usuário inexistente"));
+    }
+
+    public Page<Usuario> buscarTodos(Pageable pageable) {
+        return userRepository.findAll(pageable);
+    }
+
+    public void excluirPorId(Long id) {
+        if (id == null)
+            throw new RuntimeException("Id não pode ser nulo");
+
+        if (!userRepository.existsById(id))
+            throw new RuntimeException("Usuário inexistente!");
+
+        userRepository.deleteById(id);
+
+        if (userRepository.existsById(id))
+            throw new RuntimeException("Não foi possível excluir o usuário");
+    }
 
 }
