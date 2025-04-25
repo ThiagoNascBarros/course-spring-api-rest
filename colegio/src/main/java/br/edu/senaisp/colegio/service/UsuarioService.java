@@ -1,12 +1,16 @@
 package br.edu.senaisp.colegio.service;
 
 import br.edu.senaisp.colegio.model.Usuario;
+import br.edu.senaisp.colegio.model.dto.UsuarioSaidaDTO;
 import br.edu.senaisp.colegio.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class UsuarioService {
@@ -51,8 +55,13 @@ public class UsuarioService {
         return userRepository.findById(id).orElseThrow(() -> new RuntimeException("Usuário inexistente"));
     }
 
-    public Page<Usuario> buscarTodos(Pageable pageable) {
-        return userRepository.findAll(pageable);
+    public List<UsuarioSaidaDTO> buscarTodos(Pageable pageable) {
+        List<Usuario> lista = userRepository.findAll(pageable).stream().toList();
+        return userRepository.findAll(pageable).map(usuario -> new UsuarioSaidaDTO(usuario.getLogin(), usuario.getPerfil(), usuario.getStatus())).toList();
+
+//        lista.forEach(usuario -> {
+//            listaDto.add(new UsuarioSaidaDTO(usuario.getLogin(), usuario.getPerfil(), usuario.getStatus()));
+//        });
     }
 
     public void excluirPorId(Long id) {

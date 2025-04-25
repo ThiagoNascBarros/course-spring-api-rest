@@ -22,6 +22,9 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private EPerfil perfil;
 
+    @Enumerated(EnumType.STRING)
+    private EStatus status;
+
     public EStatus getStatus() {
         return status;
     }
@@ -29,9 +32,6 @@ public class Usuario {
     public void setStatus(EStatus status) {
         this.status = status;
     }
-
-    @Enumerated(EnumType.STRING)
-    private EStatus status;
 
     public Long getId() {
         return id;
