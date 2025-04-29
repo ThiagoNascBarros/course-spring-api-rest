@@ -1,8 +1,11 @@
 package br.edu.senaisp.colegio.config;
 
+import br.edu.senaisp.colegio.model.EPerfil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -17,7 +20,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @EnableWebSecurity
-public class SegurancaBasic {
+public class SegurancaFilterChain {
 
     @Autowired
     SegurancaFilter segurancaFilter;
@@ -26,7 +29,9 @@ public class SegurancaBasic {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf().disable()
                 .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(a -> a.requestMatchers(HttpMethod.POST,"/api/login").permitAll()
+                .authorizeHttpRequests(a -> a
+                .requestMatchers(HttpMethod.POST,"/api/login").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/usuario").hasRole(EPerfil.ADMIN.toString())
                 .anyRequest().authenticated()).addFilterBefore(segurancaFilter, UsernamePasswordAuthenticationFilter.class).build();
     }
 
@@ -40,5 +45,8 @@ public class SegurancaBasic {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
+    @Bean
+    public AuthenticationManager authManager(AuthenticationConfiguration config) throws Exception { return config.getAuthenticationManager(); }
 
 }
